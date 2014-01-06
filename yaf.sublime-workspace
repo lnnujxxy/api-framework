@@ -1,0 +1,666 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pro",
+				"prototype"
+			],
+			[
+				"po",
+				"props"
+			],
+			[
+				"C",
+				"Child"
+			],
+			[
+				"cons",
+				"console"
+			],
+			[
+				"check",
+				"checkbox"
+			],
+			[
+				"getE",
+				"getElementById"
+			],
+			[
+				"class",
+				"className"
+			],
+			[
+				"last",
+				"lastIndex"
+			],
+			[
+				"getEl",
+				"getElementsByTagName"
+			],
+			[
+				"en",
+				"enabled"
+			],
+			[
+				"mo",
+				"moduleMethod"
+			],
+			[
+				"Mo",
+				"Module1"
+			],
+			[
+				"module",
+				"moduleMethod"
+			],
+			[
+				"private",
+				"privateVar"
+			],
+			[
+				"modu",
+				"module"
+			],
+			[
+				"mod",
+				"module3"
+			],
+			[
+				"con",
+				"constructor"
+			],
+			[
+				"in",
+				"inherit"
+			],
+			[
+				"P",
+				"Parent"
+			],
+			[
+				"arg",
+				"arguments"
+			],
+			[
+				"this",
+				"thisArg"
+			],
+			[
+				"ar",
+				"arguments"
+			],
+			[
+				"get",
+				"getName"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.php",
+			"settings":
+			{
+				"buffer_size": 174,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/controllers/Index.php",
+			"settings":
+			{
+				"buffer_size": 775,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "conf/application.ini",
+			"settings":
+			{
+				"buffer_size": 139,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 23 files for \"application.directory\"\n\n0 matches across 0 files\n\n\nSearching 280 files for \"application.directory\"\n\n/home/zhouweiwei/htdocs/yaf/conf/application.ini:\n    1  [common]\n    2: application.directory = APPLICATION_PATH  \"/application\"\n    3  application.dispatcher.catchException = TRUE\n    4  \n\n/home/zhouweiwei/htdocs/yaf/php-yaf/README.md:\n  112  [product]\n  113  ;CONSTANTS is supported\n  114: application.directory = APP_PATH \"/application/\" \n  115  ```\n  116  alternatively, you can use a PHP array instead: \n\n/home/zhouweiwei/htdocs/yaf/php-yaf/tests/070.phpt:\n   10  [product]\n   11  ;CONSTANTS is supported\n   12: application.directory = APP_PATH \"/application/\"\n   13  INI;\n   14  \n\n/home/zhouweiwei/htdocs/yaf/php-yaf/tests/simple.ini:\n    1  [base]\n    2: application.directory=APPLICATION_PATH \"/applcation\"\n    3  name = \"base\"\n    4  array.1 = 1\n\n/home/zhouweiwei/htdocs/yaf/php-yaf/tests/system.ini:\n    1  [base]\n    2: application.directory=APPLICATION_PATH \"/applcation\"\n    3  application.system.lowcase_path=0\n    4  application.system.name_suffix=0\n\n/home/zhouweiwei/htdocs/yaf/php-yaf/tools/cg/output/Sample/conf/application.ini:\n    1  [common]\n    2: application.directory = APPLICATION_PATH  \"/application\"\n    3  application.dispatcher.catchException = TRUE\n    4  \n\n/home/zhouweiwei/htdocs/yaf/php-yaf/tools/cg/output/Sample20131201-214315/conf/application.ini:\n    1  [common]\n    2: application.directory = APPLICATION_PATH  \"/application\"\n    3  application.dispatcher.catchException = TRUE\n    4  \n\n/home/zhouweiwei/htdocs/yaf/php-yaf/tools/cg/templates/conf/application.ini.tpl:\n    1  [common]\n    2: application.directory = APPLICATION_PATH  \"/application\"\n    3  application.dispatcher.catchException = TRUE\n    4  \n\n/home/zhouweiwei/htdocs/yaf/php-yaf/yaf_dispatcher.c:\n  530  	yaf_request_set_dispatched(request, 1 TSRMLS_CC);\n  531  	if (!app_dir) {\n  532: 		yaf_trigger_error(YAF_ERR_STARTUP_FAILED TSRMLS_CC, \"%s requires %s(which set the application.directory) to be initialized first\",\n  533  				yaf_dispatcher_ce->name, yaf_application_ce->name);\n  534  		return 0;\n\n9 matches across 9 files\n",
+			"settings":
+			{
+				"buffer_size": 2156,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"contents": "<?php\n/**\n * @name Bootstrap\n * @author zhouweiwei\n * @desc 所有在Bootstrap类中, 以_init开头的方法, 都会被Yaf调用,\n * @see http://www.php.net/manual/en/class.yaf-bootstrap-abstract.php\n * 这些方法, 都接受一个参数:Yaf_Dispatcher $dispatcher\n * 调用的次序, 和申明的次序相同\n */\nclass Bootstrap extends Yaf_Bootstrap_Abstract{\n\n    public function _initConfig() {\n		//把配置保存起来\n		$arrConfig = Yaf_Application::app()->getConfig();\n		Yaf_Registry::set('config', $arrConfig);\n	}\n\n	public function _initPlugin(Yaf_Dispatcher $dispatcher) {\n		//注册一个插件\n		$objSamplePlugin = new SamplePlugin();\n		$dispatcher->registerPlugin($objSamplePlugin);\n	}\n\n	public function _initRoute(Yaf_Dispatcher $dispatcher) {\n		//在这里注册自己的路由协议,默认使用简单路由\n	}\n	\n	public function _initView(Yaf_Dispatcher $dispatcher){\n		//在这里注册自己的view控制器，例如smarty,firekylin\n	}\n\n	public function _initDB(Yaf_Dispatcher $dispatcher) {\n		\n	}\n}\n",
+			"file": "application/Bootstrap.php",
+			"file_size": 959,
+			"file_write_time": 1388304387000000,
+			"settings":
+			{
+				"buffer_size": 847,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/zhouweiwei/桌面/无标题文档",
+			"settings":
+			{
+				"buffer_size": 621,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 159.0,
+		"selected_items":
+		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"instll",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 216.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/zhouweiwei/桌面/nginx php 优化",
+		"/home/zhouweiwei/桌面/text.txt 的片段",
+		"/home/zhouweiwei/桌面/php install.txt",
+		"/home/zhouweiwei/桌面/nginx fpm socket.conf",
+		"/home/zhouweiwei/桌面/login.html",
+		"/home/zhouweiwei/htdocs/js/1-5.html",
+		"/home/zhouweiwei/htdocs/js_lib/Get.js",
+		"/home/zhouweiwei/htdocs/js_lib/Inherit.js",
+		"/home/zhouweiwei/htdocs/js/1_1.html",
+		"/home/zhouweiwei/htdocs/js_lib/EventUtil.js",
+		"/home/zhouweiwei/htdocs/js_lib/DomReady.js",
+		"/home/zhouweiwei/htdocs/js/domReady.js",
+		"/home/zhouweiwei/htdocs/js/1-4.html",
+		"/home/zhouweiwei/htdocs/js_lib/domReady.js",
+		"/home/zhouweiwei/htdocs/php-code/CodeIgniter/index.php",
+		"/home/zhouweiwei/htdocs/php-code/CodeIgniter/system/core/Router.php",
+		"/home/zhouweiwei/htdocs/php-code/CodeIgniter/application/config/config.php",
+		"/home/zhouweiwei/桌面/util.js",
+		"/home/zhouweiwei/下载/Util js┐т.js",
+		"/home/zhouweiwei/htdocs/js/test.html",
+		"/home/zhouweiwei/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
+		"/home/zhouweiwei/.cache/.fr-z4XeXD/Ch09/client.js",
+		"/home/zhouweiwei/htdocs/php-code/CodeIgniter/system/core/URI.php",
+		"/home/zhouweiwei/htdocs/php-code/CodeIgniter/application/config/routes.php",
+		"/home/zhouweiwei/htdocs/php-code/CodeIgniter/system/core/CodeIgniter.php",
+		"/home/zhouweiwei/htdocs/php-code/CodeIgniter/application/controllers/Welcome.php",
+		"/home/zhouweiwei/htdocs/php-code/CodeIgniter/application/controllers/smartytest.php",
+		"/home/zhouweiwei/htdocs/php-code/CodeIgniter/application/libraries/MY_Parser.php",
+		"/home/zhouweiwei/htdocs/php-code/CodeIgniter/system/core/Input.php",
+		"/home/zhouweiwei/htdocs/php-code/CodeIgniter/system/core/Common.php",
+		"/home/zhouweiwei/htdocs/php-code/CodeIgniter/system/core/Exceptions.php",
+		"/home/zhouweiwei/htdocs/php-code/CodeIgniter/system/core/Hooks.php",
+		"/home/zhouweiwei/htdocs/php-code/CodeIgniter/system/core/Loader.php",
+		"/home/zhouweiwei/htdocs/php-code/CodeIgniter/application/config/hooks.php",
+		"/home/zhouweiwei/htdocs/php-code/CodeIgniter/application/hooks/Myclass.php",
+		"/home/zhouweiwei/htdocs/js/jquery/plugins/jquery-cookie/test/test.html",
+		"/home/zhouweiwei/htdocs/js/jquery/plugins/jquery-cookie/test/module.js",
+		"/home/zhouweiwei/htdocs/js/jquery/plugins/jquery-cookie/test/extend_module.js",
+		"/home/zhouweiwei/htdocs/js/jquery/plugins/jquery-cookie/test/index.html",
+		"/home/zhouweiwei/htdocs/js/jquery/plugins/jquery-cookie/jquery.cookie.js",
+		"/home/zhouweiwei/htdocs/js/jquery/plugins/jquery-metadata/jquery.metadata.js",
+		"/home/zhouweiwei/htdocs/js/jquery/plugins/jQuery-File-Upload/js/jquery.fileupload.js",
+		"/home/zhouweiwei/htdocs/c/annotated_redis_source/src/sds.c",
+		"/home/zhouweiwei/htdocs/js/Base.js/base.js",
+		"/home/zhouweiwei/htdocs/js/Base.js/base.html",
+		"/home/zhouweiwei/htdocs/c/annotated_redis_source/src/redis.c",
+		"/home/zhouweiwei/htdocs/c/annotated_redis_source/src/Makefile",
+		"/home/zhouweiwei/htdocs/c/annotated_redis_source/src/sds.h",
+		"/home/zhouweiwei/下载/workspace/intf/intf.sublime-project",
+		"/home/zhouweiwei/htdocs/php-code/php-src/ext/date/php_date.c",
+		"/home/zhouweiwei/htdocs/php-code/php-src/ext/calendar/calendar.c",
+		"/home/zhouweiwei/htdocs/php-code/php-src/ext/curl/interface.c",
+		"/usr/share/applications/sublime.desktop",
+		"/usr/share/applications/defaults.list"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/home/zhouweiwei/htdocs/yaf",
+			"/home/zhouweiwei/htdocs/yaf,*.php",
+			"/home/zhouweiwei/htdocs/php-code/CodeIgniter,*.php",
+			"/home/zhouweiwei/htdocs/",
+			"/home/zhouweiwei/htdocs/php-code/Codeigniter,*.php",
+			"/home/zhouweiwei/htdocs/c/annotated_redis_source",
+			"/home/zhouweiwei/",
+			"/home/zhouweiwei/htdocs/php-code/php-src/ext",
+			"/home/zhouweiwei/htdocs/php-code/php-src/",
+			"/home/zhouweiwei/htdocs/php-code/php-src/ext/,",
+			"/h,ome/zhouweiwei/htdocs/php-code/php-src/ext/,",
+			"/home/zhouweiwei/php-codes/php-src/ext"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"application.directory",
+			" : f",
+			": fun",
+			"function (",
+			"domReady",
+			"_this",
+			"tab",
+			"var domReady = function (ready) {\n\n  var fns = [], fn, f = false\n    , doc = document\n    , testEl = doc.documentElement\n    , hack = testEl.doScroll\n    , domContentLoaded = 'DOMContentLoaded'\n    , addEventListener = 'addEventListener'\n    , onreadystatechange = 'onreadystatechange'\n    , readyState = 'readyState'\n    , loadedRgx = hack ? /^loaded|^c/ : /^loaded|c/\n    , loaded = loadedRgx.test(doc[readyState])\n\n  function flush(f) {\n    loaded = 1\n    while (f = fns.shift()) f()\n  }\n\n  doc[addEventListener] && doc[addEventListener](domContentLoaded, fn = function () {\n    doc.removeEventListener(domContentLoaded, fn, f)\n    flush()\n  }, f)\n\n\n  hack && doc.attachEvent(onreadystatechange, fn = function () {\n    if (/^c/.test(doc[readyState])) {\n      doc.detachEvent(onreadystatechange, fn)\n      flush()\n    }\n  })\n\n  return (ready = hack ?\n    function (fn) {\n      self != top ?\n        loaded ? fn() : fns.push(fn) :\n        function () {\n          try {\n            testEl.doScroll('left')\n          } catch (e) {\n            return setTimeout(function() { ready(fn) }, 50)\n          }\n          fn()\n        }()\n    } :\n    function (fn) {\n      loaded ? fn() : fns.push(fn)\n    })\n}",
+			"ready",
+			"url_suffix",
+			"translate_uri_dashes",
+			"route",
+			"routes",
+			"_set_request",
+			"_validate_request",
+			"routes",
+			"_parse_routes",
+			"_fetch_uri_string",
+			"_parse_query_string",
+			"_remove_relative_directory",
+			"enable_hooks",
+			"enabled",
+			"CI_Hooks::$enabled",
+			"enabled",
+			"segments",
+			"class",
+			"default_controller",
+			"Welcome",
+			"post_controller",
+			"subclass_prefix",
+			"function _exception_handler",
+			"define('BASEPATH'",
+			"BASEPATH",
+			"'BASEPATH'",
+			"define('BASEPATH'",
+			"lua",
+			"luajit",
+			"lua",
+			"sdsRemoveFreeSpace",
+			"sdslen",
+			"SDS_TEST_MAIN",
+			"zmalloc",
+			"get_reids_config",
+			"new Redis()",
+			"try",
+			"'timeout'=>100",
+			"cache.php",
+			"auth=>",
+			"auth=",
+			"pingRedis",
+			"new Redis",
+			"ecalloc",
+			"emalloc",
+			"emalloc\nemalloc\nemalloc",
+			"zend_hash_num_elements",
+			"zend_get_hash_value",
+			"add_assoc_zval",
+			"add_assoc_zval\nadd_assoc_zval",
+			"gedit"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			":f",
+			" : fun",
+			"function(",
+			"self",
+			"get_redis_config",
+			"'timeout'=>1",
+			"'auth'=>",
+			"auth=>",
+			"sublime"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 5,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.php",
+					"settings":
+					{
+						"buffer_size": 174,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								149,
+								149
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "application/controllers/Index.php",
+					"settings":
+					{
+						"buffer_size": 775,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								642,
+								642
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 252.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "conf/application.ini",
+					"settings":
+					{
+						"buffer_size": 139,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								138,
+								138
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"settings":
+					{
+						"buffer_size": 2156,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										197,
+										218
+									],
+									[
+										417,
+										438
+									],
+									[
+										642,
+										663
+									],
+									[
+										787,
+										808
+									],
+									[
+										956,
+										977
+									],
+									[
+										1195,
+										1216
+									],
+									[
+										1432,
+										1453
+									],
+									[
+										1654,
+										1675
+									],
+									[
+										1999,
+										2020
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								75,
+								75
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"output_tag": 2,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1988.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "application/Bootstrap.php",
+					"settings":
+					{
+						"buffer_size": 847,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								841,
+								841
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 344.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/home/zhouweiwei/桌面/无标题文档",
+					"settings":
+					{
+						"buffer_size": 621,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								621,
+								621
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"uri",
+				"system/core/URI.php"
+			],
+			[
+				"route",
+				"system/core/Router.php"
+			],
+			[
+				"wel",
+				"application/controllers/Welcome.php"
+			],
+			[
+				"hooks",
+				"system/core/Hooks.php"
+			],
+			[
+				"exceptions",
+				"system/core/Exceptions.php"
+			],
+			[
+				"sds.h",
+				"src/sds.h"
+			],
+			[
+				"sds.c",
+				"src/sds.c"
+			],
+			[
+				"config.inc.php",
+				"src/include/config.inc.php"
+			],
+			[
+				"cache.php",
+				"config/store/cache.php"
+			],
+			[
+				"serv",
+				"src/include/server/server_conf.release.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 186.0,
+	"status_bar_visible": false
+}
