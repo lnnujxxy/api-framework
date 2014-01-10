@@ -1,7 +1,6 @@
 <?php
 /**
  * @name Bootstrap
- * @author zhouweiwei
  * @desc 所有在Bootstrap类中, 以_init开头的方法, 都会被Yaf调用,
  * @see http://www.php.net/manual/en/class.yaf-bootstrap-abstract.php
  * 这些方法, 都接受一个参数:Yaf_Dispatcher $dispatcher
@@ -11,8 +10,8 @@ class Bootstrap extends Yaf_Bootstrap_Abstract{
 
     public function _initConfig() {
 		//把配置保存起来
-		$arrConfig = Yaf_Application::app()->getConfig();
-		Yaf_Registry::set('config', $arrConfig);
+		$config = Yaf_Application::app()->getConfig();
+		Yaf_Registry::set('config', $config);
 	}
 
 	public function _initPlugin(Yaf_Dispatcher $dispatcher) {
