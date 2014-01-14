@@ -13,10 +13,6 @@ class IndexController extends Yaf_Controller_Abstract {
      * 对于如下的例子, 当访问http://yourhost/Sample/index/index/index/name/zhouweiwei 的时候, 你就会发现不同
      */
 	public function indexAction($name = "Stranger") {
-		$mysql = new Mysql();
-		$mysql->connect()->query("INSERT INTO test values(".mt_rand(10, 20000).", 'test3')");
-		var_dump($mysql->connect()->getRow("SELECT * FROM test WHERE id = :id", array("id"=>1)));
-		var_dump($mysql->connect()->getAll("SELECT * FROM test"));
 		//1. fetch query
 		$get = $this->getRequest()->getQuery("get", "default value");
 

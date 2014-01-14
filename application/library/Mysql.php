@@ -25,7 +25,7 @@ class Mysql {
 			$this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 			$this->isConnected = true;
 		} catch (PDOException $e) {
-		    die('Connection failed: ' . $e->getMessage());
+			Logger::getInstance(APPLICATION_PATH.'log', Logger::INFO)->logError($e->getMessage());
 		}
 		return $this;
 	}
@@ -47,7 +47,7 @@ class Mysql {
             # Execute SQL
             return $this->stmt->execute(); 
 		}  catch(PDOException $e) {
-            die('Connection failed: ' . $e->getMessage());
+            Logger::getInstance(APPLICATION_PATH.'log', Logger::INFO)->logError($e->getMessage());
         }
 
         # Reset the parameters
@@ -80,7 +80,7 @@ class Mysql {
 		} elseif ( $statement === 'insert' ||  $statement === 'update' || $statement === 'delete' ) {
 			return $this->stmt->rowCount();        
 		} else {
-			return NULL;
+			return null;
 		}
 	}
 
