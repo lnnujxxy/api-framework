@@ -2,6 +2,7 @@
 /**
 * @backupGlobals disabled
 */
+/*
 class SimpleSSDBTest extends PHPUnit_Framework_TestCase {
     private $ssdb;
 
@@ -27,4 +28,5 @@ class SimpleSSDBTest extends PHPUnit_Framework_TestCase {
         $this->assertNull($this->ssdb->zget('test', 'a'));
     }
 }
+*/
 ?>
