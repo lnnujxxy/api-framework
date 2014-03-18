@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"in",
+				"insertId"
+			],
+			[
+				"SE",
+				"_SEVER"
+			],
+			[
 				"pro",
 				"prototype"
 			],
@@ -72,10 +80,6 @@
 				"constructor"
 			],
 			[
-				"in",
-				"inherit"
-			],
-			[
 				"P",
 				"Parent"
 			],
@@ -103,52 +107,7 @@
 			"file": "index.php",
 			"settings":
 			{
-				"buffer_size": 174,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "application/controllers/Index.php",
-			"settings":
-			{
-				"buffer_size": 775,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "conf/application.ini",
-			"settings":
-			{
-				"buffer_size": 139,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "Searching 23 files for \"application.directory\"\n\n0 matches across 0 files\n\n\nSearching 280 files for \"application.directory\"\n\n/home/zhouweiwei/htdocs/yaf/conf/application.ini:\n    1  [common]\n    2: application.directory = APPLICATION_PATH  \"/application\"\n    3  application.dispatcher.catchException = TRUE\n    4  \n\n/home/zhouweiwei/htdocs/yaf/php-yaf/README.md:\n  112  [product]\n  113  ;CONSTANTS is supported\n  114: application.directory = APP_PATH \"/application/\" \n  115  ```\n  116  alternatively, you can use a PHP array instead: \n\n/home/zhouweiwei/htdocs/yaf/php-yaf/tests/070.phpt:\n   10  [product]\n   11  ;CONSTANTS is supported\n   12: application.directory = APP_PATH \"/application/\"\n   13  INI;\n   14  \n\n/home/zhouweiwei/htdocs/yaf/php-yaf/tests/simple.ini:\n    1  [base]\n    2: application.directory=APPLICATION_PATH \"/applcation\"\n    3  name = \"base\"\n    4  array.1 = 1\n\n/home/zhouweiwei/htdocs/yaf/php-yaf/tests/system.ini:\n    1  [base]\n    2: application.directory=APPLICATION_PATH \"/applcation\"\n    3  application.system.lowcase_path=0\n    4  application.system.name_suffix=0\n\n/home/zhouweiwei/htdocs/yaf/php-yaf/tools/cg/output/Sample/conf/application.ini:\n    1  [common]\n    2: application.directory = APPLICATION_PATH  \"/application\"\n    3  application.dispatcher.catchException = TRUE\n    4  \n\n/home/zhouweiwei/htdocs/yaf/php-yaf/tools/cg/output/Sample20131201-214315/conf/application.ini:\n    1  [common]\n    2: application.directory = APPLICATION_PATH  \"/application\"\n    3  application.dispatcher.catchException = TRUE\n    4  \n\n/home/zhouweiwei/htdocs/yaf/php-yaf/tools/cg/templates/conf/application.ini.tpl:\n    1  [common]\n    2: application.directory = APPLICATION_PATH  \"/application\"\n    3  application.dispatcher.catchException = TRUE\n    4  \n\n/home/zhouweiwei/htdocs/yaf/php-yaf/yaf_dispatcher.c:\n  530  	yaf_request_set_dispatched(request, 1 TSRMLS_CC);\n  531  	if (!app_dir) {\n  532: 		yaf_trigger_error(YAF_ERR_STARTUP_FAILED TSRMLS_CC, \"%s requires %s(which set the application.directory) to be initialized first\",\n  533  				yaf_dispatcher_ce->name, yaf_application_ce->name);\n  534  		return 0;\n\n9 matches across 9 files\n",
-			"settings":
-			{
-				"buffer_size": 2156,
-				"line_ending": "Unix",
-				"name": "Find Results",
-				"scratch": true
-			}
-		},
-		{
-			"contents": "<?php\n/**\n * @name Bootstrap\n * @author zhouweiwei\n * @desc 所有在Bootstrap类中, 以_init开头的方法, 都会被Yaf调用,\n * @see http://www.php.net/manual/en/class.yaf-bootstrap-abstract.php\n * 这些方法, 都接受一个参数:Yaf_Dispatcher $dispatcher\n * 调用的次序, 和申明的次序相同\n */\nclass Bootstrap extends Yaf_Bootstrap_Abstract{\n\n    public function _initConfig() {\n		//把配置保存起来\n		$arrConfig = Yaf_Application::app()->getConfig();\n		Yaf_Registry::set('config', $arrConfig);\n	}\n\n	public function _initPlugin(Yaf_Dispatcher $dispatcher) {\n		//注册一个插件\n		$objSamplePlugin = new SamplePlugin();\n		$dispatcher->registerPlugin($objSamplePlugin);\n	}\n\n	public function _initRoute(Yaf_Dispatcher $dispatcher) {\n		//在这里注册自己的路由协议,默认使用简单路由\n	}\n	\n	public function _initView(Yaf_Dispatcher $dispatcher){\n		//在这里注册自己的view控制器，例如smarty,firekylin\n	}\n\n	public function _initDB(Yaf_Dispatcher $dispatcher) {\n		\n	}\n}\n",
-			"file": "application/Bootstrap.php",
-			"file_size": 959,
-			"file_write_time": 1388304387000000,
-			"settings":
-			{
-				"buffer_size": 847,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/zhouweiwei/桌面/无标题文档",
-			"settings":
-			{
-				"buffer_size": 621,
+				"buffer_size": 357,
 				"line_ending": "Unix"
 			}
 		}
@@ -185,7 +144,27 @@
 	},
 	"file_history":
 	[
+		"/home/zhouweiwei/htdocs/yaf/index.php",
+		"/home/zhouweiwei/htdocs/yaf/application/library/SimpleRedis.php",
+		"/home/zhouweiwei/htdocs/yaf/application/library/Mysql.php",
+		"/home/zhouweiwei/htdocs/yaf/conf/application.ini",
+		"/home/zhouweiwei/htdocs/yaf/test/library/SimpleRedisTest.php",
+		"/home/zhouweiwei/htdocs/yaf/application/controllers/Index.php",
+		"/home/zhouweiwei/htdocs/yaf/test/library/SimpleSSDBTest.php",
+		"/home/zhouweiwei/htdocs/yaf/test/library/MysqlTest.php",
+		"/home/zhouweiwei/htdocs/yaf/test/library/CipherTest.php",
 		"/home/zhouweiwei/桌面/nginx php 优化",
+		"/home/zhouweiwei/htdocs/yaf/application/library/Logger.php",
+		"/home/zhouweiwei/htdocs/yaf/application/library/Cipher.php",
+		"/home/zhouweiwei/bench.php",
+		"/home/zhouweiwei/htdocs/software/memcached",
+		"/home/zhouweiwei/htdocs/yaf/application/library/SimpleSSDB.php",
+		"/home/zhouweiwei/htdocs/yaf/application/library/Logger",
+		"/home/zhouweiwei/htdocs/yaf/test/bootstrap.php",
+		"/home/zhouweiwei/htdocs/yaf/test/phpunit.xml",
+		"/home/zhouweiwei/htdocs/yaf/test/library/Mysqltest.php",
+		"/home/zhouweiwei/htdocs/yaf/application/Bootstrap.php",
+		"/home/zhouweiwei/桌面/无标题文档",
 		"/home/zhouweiwei/桌面/text.txt 的片段",
 		"/home/zhouweiwei/桌面/php install.txt",
 		"/home/zhouweiwei/桌面/nginx fpm socket.conf",
@@ -242,7 +221,7 @@
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 44.0
 	},
 	"find_in_files":
 	{
@@ -265,9 +244,28 @@
 	},
 	"find_state":
 	{
-		"case_sensitive": false,
+		"case_sensitive": true,
 		"find_history":
 		[
+			"6380",
+			"1234",
+			"DESC",
+			"zhouweiwei@zhouweiwei-VPCCW18FC:~",
+			"textkey",
+			"recv_resp",
+			"recv",
+			"send",
+			"send_req",
+			"send",
+			"$this->sock",
+			"check_easy_resp",
+			"zhouweiwei",
+			"NO_ARGUMENTS",
+			"_severityThreshold",
+			"KLogger",
+			"query",
+			"bind",
+			"$sql",
 			"application.directory",
 			" : f",
 			": fun",
@@ -334,6 +332,9 @@
 		"regex": false,
 		"replace_history":
 		[
+			"NAME",
+			"",
+			"Logger",
 			":f",
 			" : fun",
 			"function(",
@@ -353,7 +354,7 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -361,200 +362,20 @@
 					"file": "index.php",
 					"settings":
 					{
-						"buffer_size": 174,
+						"buffer_size": 357,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								149,
-								149
+								357,
+								357
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "application/controllers/Index.php",
-					"settings":
-					{
-						"buffer_size": 775,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								642,
-								642
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 252.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "conf/application.ini",
-					"settings":
-					{
-						"buffer_size": 139,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								138,
-								138
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"settings":
-					{
-						"buffer_size": 2156,
-						"regions":
-						{
-							"match":
-							{
-								"flags": 112,
-								"regions":
-								[
-									[
-										197,
-										218
-									],
-									[
-										417,
-										438
-									],
-									[
-										642,
-										663
-									],
-									[
-										787,
-										808
-									],
-									[
-										956,
-										977
-									],
-									[
-										1195,
-										1216
-									],
-									[
-										1432,
-										1453
-									],
-									[
-										1654,
-										1675
-									],
-									[
-										1999,
-										2020
-									]
-								],
-								"scope": ""
-							}
-						},
-						"selection":
-						[
-							[
-								75,
-								75
-							]
-						],
-						"settings":
-						{
-							"detect_indentation": false,
-							"output_tag": 2,
-							"result_base_dir": "",
-							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
-							"result_line_regex": "^ +([0-9]+):",
-							"scroll_past_end": true,
-							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 1988.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "application/Bootstrap.php",
-					"settings":
-					{
-						"buffer_size": 847,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								841,
-								841
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 344.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "/home/zhouweiwei/桌面/无标题文档",
-					"settings":
-					{
-						"buffer_size": 621,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								621,
-								621
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -571,7 +392,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 44.0
 	},
 	"layout":
 	{
@@ -661,6 +482,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 186.0,
+	"side_bar_width": 182.0,
 	"status_bar_visible": false
 }

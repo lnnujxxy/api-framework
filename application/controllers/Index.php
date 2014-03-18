@@ -26,4 +26,17 @@ class IndexController extends Yaf_Controller_Abstract {
 		//4. render by Yaf, 如果这里返回FALSE, Yaf将不会调用自动视图引擎Render模板
         return TRUE;
 	}
+
+	public function redisAction() {
+		if ($this->getRequest()->isCli()) {
+			parse_str($_SERVER['argv'][2]);
+		}
+
+		$redis = RedisClient::getInstance("default")->getHashConfig("hash")->getRedis();
+		
+		$redis->set("redis", $var);
+		echo $redis->get("redis")."\r\n";
+		
+		return FALSE;
+	}
 }

@@ -1,0 +1,10 @@
+2014-03-18 22:12:07 - INFO --> Returned a million search results
+2014-03-18 22:12:07 - ERROR --> Returned a million search results; 'error'
+2014-03-18 22:12:07 - ERROR --> SQLSTATE[HY000] [2003] Can't connect to MySQL server on '127.0.0.1' (111)
+2014-03-18 22:12:07 - ERROR --> SQLSTATE[HY000] [2003] Can't connect to MySQL server on '127.0.0.1' (111)
+2014-03-18 22:12:34 - INFO --> Returned a million search results
+2014-03-18 22:12:34 - ERROR --> Returned a million search results; 'error'
+2014-03-18 22:14:47 - INFO --> Returned a million search results
+2014-03-18 22:14:47 - ERROR --> Returned a million search results; 'error'
+2014-03-18 22:15:12 - INFO --> Returned a million search results
+2014-03-18 22:15:12 - ERROR --> Returned a million search results; 'error'
