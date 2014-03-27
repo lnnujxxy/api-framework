@@ -1,0 +1,4 @@
+2014-03-28 0:04:37 - INFO --> Returned a million search results
+2014-03-28 0:04:37 - ERROR --> Returned a million search results; 'error'
+2014-03-28 0:04:56 - INFO --> Returned a million search results
+2014-03-28 0:04:56 - ERROR --> Returned a million search results; 'error'

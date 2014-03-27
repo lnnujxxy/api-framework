@@ -1,9 +1,0 @@
-2014-01-14 22:51:13 - INFO --> Returned a million search results
-2014-01-14 23:01:43 - INFO --> Returned a million search results
-2014-01-14 23:01:43 - INFO --> Returned a million search results; 111
-2014-01-14 23:02:30 - INFO --> Returned a million search results
-2014-01-14 23:02:30 - ERROR --> Returned a million search results; 'error'
-2014-01-14 23:06:45 - INFO --> Returned a million search results
-2014-01-14 23:06:45 - ERROR --> Returned a million search results; 'error'
-2014-01-14 23:07:28 - INFO --> Returned a million search results
-2014-01-14 23:07:28 - ERROR --> Returned a million search results; 'error'

@@ -1,0 +1,204 @@
+2014-03-26 23:10:20 - INFO --> Returned a million search results
+2014-03-26 23:10:20 - ERROR --> Returned a million search results; 'error'
+2014-03-26 23:10:20 - ERROR --> SQLSTATE[HY000] [2003] Can't connect to MySQL server on '127.0.0.1' (111)
+2014-03-26 23:10:20 - ERROR --> SQLSTATE[HY000] [2003] Can't connect to MySQL server on '127.0.0.1' (111)
+2014-03-26 23:13:12 - INFO --> Returned a million search results
+2014-03-26 23:13:12 - ERROR --> Returned a million search results; 'error'
+2014-03-26 23:13:12 - ERROR --> SQLSTATE[HY000] [2003] Can't connect to MySQL server on '127.0.0.1' (111)
+2014-03-26 23:13:12 - ERROR --> SQLSTATE[HY000] [2003] Can't connect to MySQL server on '127.0.0.1' (111)
+2014-03-26 23:13:12 - ERROR --> SQLSTATE[HY000] [2003] Can't connect to MySQL server on '127.0.0.1' (111)
+2014-03-26 23:13:12 - ERROR --> SQLSTATE[HY000] [2003] Can't connect to MySQL server on '127.0.0.1' (111)
+2014-03-26 23:13:48 - INFO --> Returned a million search results
+2014-03-26 23:13:48 - ERROR --> Returned a million search results; 'error'
+2014-03-26 23:13:48 - ERROR --> SQLSTATE[HY000] [2003] Can't connect to MySQL server on '127.0.0.1' (111)
+2014-03-26 23:13:48 - ERROR --> SQLSTATE[HY000] [2003] Can't connect to MySQL server on '127.0.0.1' (111)
+2014-03-26 23:13:48 - ERROR --> SQLSTATE[HY000] [2003] Can't connect to MySQL server on '127.0.0.1' (111)
+2014-03-26 23:14:25 - INFO --> Returned a million search results
+2014-03-26 23:14:25 - ERROR --> Returned a million search results; 'error'
+2014-03-26 23:14:25 - ERROR --> SQLSTATE[HY000] [2003] Can't connect to MySQL server on '127.0.0.1' (111)
+2014-03-26 23:14:25 - ERROR --> SQLSTATE[HY000] [2003] Can't connect to MySQL server on '127.0.0.1' (111)
+2014-03-26 23:14:25 - ERROR --> SQLSTATE[HY000] [2003] Can't connect to MySQL server on '127.0.0.1' (111)
+2014-03-26 23:14:25 - ERROR --> SQLSTATE[HY000] [2003] Can't connect to MySQL server on '127.0.0.1' (111)
+2014-03-26 23:14:32 - INFO --> Returned a million search results
+2014-03-26 23:14:32 - ERROR --> Returned a million search results; 'error'
+2014-03-26 23:14:32 - ERROR --> SQLSTATE[HY000] [2003] Can't connect to MySQL server on '127.0.0.1' (111)
+2014-03-26 23:14:32 - ERROR --> SQLSTATE[HY000] [2003] Can't connect to MySQL server on '127.0.0.1' (111)
+2014-03-26 23:14:32 - ERROR --> SQLSTATE[HY000] [2003] Can't connect to MySQL server on '127.0.0.1' (111)
+2014-03-26 23:14:32 - ERROR --> SQLSTATE[HY000] [2003] Can't connect to MySQL server on '127.0.0.1' (111)
+2014-03-26 23:14:58 - INFO --> Returned a million search results
+2014-03-26 23:14:58 - ERROR --> Returned a million search results; 'error'
+2014-03-26 23:15:11 - INFO --> Returned a million search results
+2014-03-26 23:15:11 - ERROR --> Returned a million search results; 'error'
+2014-03-26 23:15:45 - INFO --> Returned a million search results
+2014-03-26 23:15:45 - ERROR --> Returned a million search results; 'error'
+2014-03-26 23:15:50 - INFO --> Returned a million search results
+2014-03-26 23:15:50 - ERROR --> Returned a million search results; 'error'
+2014-03-26 23:15:50 - ERROR --> SQLSTATE[HY000] [2003] Can't connect to MySQL server on '127.0.0.1' (111)
+2014-03-26 23:15:50 - ERROR --> SQLSTATE[HY000] [2003] Can't connect to MySQL server on '127.0.0.1' (111)
+2014-03-26 23:15:50 - ERROR --> SQLSTATE[HY000] [2003] Can't connect to MySQL server on '127.0.0.1' (111)
+2014-03-26 23:15:50 - ERROR --> SQLSTATE[HY000] [2003] Can't connect to MySQL server on '127.0.0.1' (111)
+2014-03-26 23:16:17 - INFO --> Returned a million search results
+2014-03-26 23:16:17 - ERROR --> Returned a million search results; 'error'
+2014-03-26 23:16:17 - ERROR --> SQLSTATE[HY000] [2003] Can't connect to MySQL server on '127.0.0.1' (111)
+2014-03-26 23:16:17 - ERROR --> SQLSTATE[HY000] [2003] Can't connect to MySQL server on '127.0.0.1' (111)
+2014-03-26 23:16:17 - ERROR --> SQLSTATE[HY000] [2003] Can't connect to MySQL server on '127.0.0.1' (111)
+2014-03-26 23:16:17 - ERROR --> SQLSTATE[HY000] [2003] Can't connect to MySQL server on '127.0.0.1' (111)
+2014-03-26 23:16:54 - INFO --> Returned a million search results
+2014-03-26 23:16:54 - ERROR --> Returned a million search results; 'error'
+2014-03-26 23:17:04 - INFO --> Returned a million search results
+2014-03-26 23:17:04 - ERROR --> Returned a million search results; 'error'
+2014-03-26 23:17:04 - ERROR --> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'weibo.test' doesn't exist
+2014-03-26 23:17:04 - ERROR --> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'weibo.test' doesn't exist
+2014-03-26 23:18:24 - INFO --> Returned a million search results
+2014-03-26 23:18:24 - ERROR --> Returned a million search results; 'error'
+2014-03-26 23:18:24 - ERROR --> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'weibo.test' doesn't exist
+2014-03-26 23:18:24 - ERROR --> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'weibo.test' doesn't exist
+2014-03-26 23:22:31 - INFO --> Returned a million search results
+2014-03-26 23:22:31 - ERROR --> Returned a million search results; 'error'
+2014-03-26 23:22:31 - ERROR --> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'weibo.test' doesn't exist
+2014-03-26 23:22:31 - ERROR --> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'weibo.test' doesn't exist
+2014-03-26 23:23:01 - INFO --> Returned a million search results
+2014-03-26 23:23:01 - ERROR --> Returned a million search results; 'error'
+2014-03-26 23:23:01 - ERROR --> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'weibo.test' doesn't exist
+2014-03-26 23:23:01 - ERROR --> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'weibo.test' doesn't exist
+2014-03-26 23:23:01 - ERROR --> SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+2014-03-26 23:23:01 - ERROR --> SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+2014-03-26 23:26:09 - INFO --> Returned a million search results
+2014-03-26 23:26:09 - ERROR --> Returned a million search results; 'error'
+2014-03-26 23:26:09 - ERROR --> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'weibo.test' doesn't exist
+2014-03-26 23:26:09 - ERROR --> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'weibo.test' doesn't exist
+2014-03-26 23:26:09 - ERROR --> SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+2014-03-26 23:26:09 - ERROR --> SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+2014-03-26 23:29:26 - INFO --> Returned a million search results
+2014-03-26 23:29:26 - ERROR --> Returned a million search results; 'error'
+2014-03-26 23:29:26 - ERROR --> SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+2014-03-26 23:29:26 - ERROR --> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'weibo.test' doesn't exist
+2014-03-26 23:29:26 - ERROR --> SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+2014-03-26 23:29:26 - ERROR --> SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+2014-03-26 23:29:44 - INFO --> Returned a million search results
+2014-03-26 23:29:44 - ERROR --> Returned a million search results; 'error'
+2014-03-26 23:30:36 - INFO --> Returned a million search results
+2014-03-26 23:30:36 - ERROR --> Returned a million search results; 'error'
+2014-03-26 23:30:36 - ERROR --> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'weibo.test' doesn't exist
+2014-03-26 23:37:28 - INFO --> Returned a million search results
+2014-03-26 23:37:28 - ERROR --> Returned a million search results; 'error'
+2014-03-26 23:37:57 - INFO --> Returned a million search results
+2014-03-26 23:37:57 - ERROR --> Returned a million search results; 'error'
+2014-03-26 23:37:57 - ERROR --> SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+2014-03-26 23:37:57 - ERROR --> SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+2014-03-26 23:38:04 - INFO --> Returned a million search results
+2014-03-26 23:38:04 - ERROR --> Returned a million search results; 'error'
+2014-03-26 23:38:04 - ERROR --> SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+2014-03-26 23:38:04 - ERROR --> SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+2014-03-26 23:38:42 - INFO --> Returned a million search results
+2014-03-26 23:38:42 - ERROR --> Returned a million search results; 'error'
+2014-03-26 23:38:43 - ERROR --> SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+2014-03-26 23:38:43 - ERROR --> SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+2014-03-26 23:39:41 - INFO --> Returned a million search results
+2014-03-26 23:39:41 - ERROR --> Returned a million search results; 'error'
+2014-03-26 23:39:41 - ERROR --> SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+2014-03-26 23:39:41 - ERROR --> SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+2014-03-26 23:40:29 - INFO --> Returned a million search results
+2014-03-26 23:40:29 - ERROR --> Returned a million search results; 'error'
+2014-03-26 23:40:53 - INFO --> Returned a million search results
+2014-03-26 23:40:53 - ERROR --> Returned a million search results; 'error'
+2014-03-26 23:40:53 - ERROR --> SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+2014-03-26 23:40:53 - ERROR --> SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+2014-03-26 23:41:09 - INFO --> Returned a million search results
+2014-03-26 23:41:09 - ERROR --> Returned a million search results; 'error'
+2014-03-26 23:41:09 - ERROR --> SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+2014-03-26 23:41:09 - ERROR --> SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+2014-03-26 23:41:35 - INFO --> Returned a million search results
+2014-03-26 23:41:35 - ERROR --> Returned a million search results; 'error'
+2014-03-26 23:41:35 - ERROR --> SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+2014-03-26 23:41:35 - ERROR --> SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+2014-03-26 23:41:53 - INFO --> Returned a million search results
+2014-03-26 23:41:53 - ERROR --> Returned a million search results; 'error'
+2014-03-26 23:41:53 - ERROR --> SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+2014-03-26 23:41:53 - ERROR --> SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+2014-03-26 23:42:14 - INFO --> Returned a million search results
+2014-03-26 23:42:14 - ERROR --> Returned a million search results; 'error'
+2014-03-26 23:42:16 - ERROR --> SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+2014-03-26 23:42:16 - ERROR --> SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+2014-03-26 23:43:51 - INFO --> Returned a million search results
+2014-03-26 23:43:51 - ERROR --> Returned a million search results; 'error'
+2014-03-26 23:43:51 - ERROR --> SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+2014-03-26 23:43:51 - ERROR --> SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+2014-03-26 23:44:47 - INFO --> Returned a million search results
+2014-03-26 23:44:47 - ERROR --> Returned a million search results; 'error'
+2014-03-26 23:44:47 - ERROR --> SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+2014-03-26 23:44:47 - ERROR --> SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+2014-03-26 23:46:01 - INFO --> Returned a million search results
+2014-03-26 23:46:01 - ERROR --> Returned a million search results; 'error'
+2014-03-26 23:46:01 - ERROR --> SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+2014-03-26 23:46:01 - ERROR --> SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+2014-03-26 23:46:49 - INFO --> Returned a million search results
+2014-03-26 23:46:49 - ERROR --> Returned a million search results; 'error'
+2014-03-26 23:46:49 - ERROR --> SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+2014-03-26 23:46:49 - ERROR --> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'weibo.wx_user' doesn't exist
+2014-03-26 23:48:14 - INFO --> Returned a million search results
+2014-03-26 23:48:14 - ERROR --> Returned a million search results; 'error'
+2014-03-26 23:48:14 - ERROR --> SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+2014-03-26 23:48:14 - ERROR --> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'weibo.wx_user' doesn't exist
+2014-03-26 23:48:54 - INFO --> Returned a million search results
+2014-03-26 23:48:54 - ERROR --> Returned a million search results; 'error'
+2014-03-26 23:48:54 - ERROR --> SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+2014-03-26 23:48:54 - ERROR --> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'weibo.wx_user' doesn't exist
+2014-03-26 23:49:29 - INFO --> Returned a million search results
+2014-03-26 23:49:29 - ERROR --> Returned a million search results; 'error'
+2014-03-26 23:49:29 - ERROR --> SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+2014-03-26 23:49:29 - ERROR --> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'weibo.wx_user' doesn't exist
+2014-03-26 23:51:31 - INFO --> Returned a million search results
+2014-03-26 23:51:31 - ERROR --> Returned a million search results; 'error'
+2014-03-26 23:51:31 - ERROR --> SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+2014-03-26 23:51:31 - ERROR --> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'weibo.wx_user' doesn't exist
+2014-03-26 23:51:52 - INFO --> Returned a million search results
+2014-03-26 23:51:52 - ERROR --> Returned a million search results; 'error'
+2014-03-26 23:51:52 - ERROR --> SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+2014-03-26 23:51:53 - ERROR --> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'weibo.wx_user' doesn't exist
+2014-03-26 23:53:09 - INFO --> Returned a million search results
+2014-03-26 23:53:09 - ERROR --> Returned a million search results; 'error'
+2014-03-26 23:53:49 - INFO --> Returned a million search results
+2014-03-26 23:53:49 - ERROR --> Returned a million search results; 'error'
+2014-03-26 23:53:49 - ERROR --> SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+2014-03-26 23:53:49 - ERROR --> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'weibo.wx_user' doesn't exist
+2014-03-26 23:54:00 - INFO --> Returned a million search results
+2014-03-26 23:54:00 - ERROR --> Returned a million search results; 'error'
+2014-03-26 23:54:00 - ERROR --> SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+2014-03-26 23:54:00 - ERROR --> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'weibo.wx_user' doesn't exist
+2014-03-26 23:54:00 - ERROR --> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'weibo.wx_user' doesn't exist
+2014-03-26 23:54:29 - INFO --> Returned a million search results
+2014-03-26 23:54:29 - ERROR --> Returned a million search results; 'error'
+2014-03-26 23:54:29 - ERROR --> SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+2014-03-26 23:54:29 - ERROR --> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'weibo.wx_user' doesn't exist
+2014-03-26 23:54:29 - ERROR --> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'weibo.wx_user' doesn't exist
+2014-03-26 23:55:23 - INFO --> Returned a million search results
+2014-03-26 23:55:23 - ERROR --> Returned a million search results; 'error'
+2014-03-26 23:55:23 - ERROR --> SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+2014-03-26 23:55:23 - ERROR --> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'weibo.wx_user' doesn't exist
+2014-03-26 23:55:23 - ERROR --> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'weibo.wx_user' doesn't exist
+2014-03-26 23:55:43 - INFO --> Returned a million search results
+2014-03-26 23:55:43 - ERROR --> Returned a million search results; 'error'
+2014-03-26 23:55:43 - ERROR --> SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+2014-03-26 23:55:43 - ERROR --> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'weibo.wx_user' doesn't exist
+2014-03-26 23:55:43 - ERROR --> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'weibo.wx_user' doesn't exist
+2014-03-26 23:56:16 - INFO --> Returned a million search results
+2014-03-26 23:56:16 - ERROR --> Returned a million search results; 'error'
+2014-03-26 23:56:16 - ERROR --> SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+2014-03-26 23:56:16 - ERROR --> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'weibo.wx_user' doesn't exist
+2014-03-26 23:56:16 - ERROR --> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'weibo.wx_user' doesn't exist
+2014-03-26 23:56:51 - INFO --> Returned a million search results
+2014-03-26 23:56:51 - ERROR --> Returned a million search results; 'error'
+2014-03-26 23:56:51 - ERROR --> SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+2014-03-26 23:56:51 - ERROR --> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'weibo.wx_user' doesn't exist
+2014-03-26 23:56:51 - ERROR --> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'weibo.wx_user' doesn't exist
+2014-03-26 23:57:21 - INFO --> Returned a million search results
+2014-03-26 23:57:21 - ERROR --> Returned a million search results; 'error'
+2014-03-26 23:57:21 - ERROR --> SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+2014-03-26 23:57:21 - ERROR --> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'weibo.wx_user' doesn't exist
+2014-03-26 23:57:21 - ERROR --> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'weibo.wx_user' doesn't exist
+2014-03-26 23:59:01 - INFO --> Returned a million search results
+2014-03-26 23:59:01 - ERROR --> Returned a million search results; 'error'
+2014-03-26 23:59:01 - ERROR --> SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+2014-03-26 23:59:01 - ERROR --> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'weibo.wx_user' doesn't exist
+2014-03-26 23:59:01 - ERROR --> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'weibo.wx_user' doesn't exist

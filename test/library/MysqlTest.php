@@ -10,32 +10,36 @@ class MysqlTest extends PHPUnit_Framework_TestCase {
       PRIMARY KEY (`id`)
     ) ENGINE=InnoDB
     */
-    private $mysql;
-    private $autoId;
 
-    public function setUp() {
-        $this->mysql = new Mysql();
+    public function testGetDB() {
+        $db = Mysql::getInstance()->getHashConfig()->getDB();
+
+        $this->assertTrue(is_object($db));
     }
 
-    public function testConnect() {
-        $object = $this->mysql->connect();
-        $this->assertEquals($object->isConnected, true);
+    public function testDB() {
+        $db = Mysql::getInstance()->getHashConfig()->getDB();
+
+        $sql = "INSERT INTO test SET `id` = ".mt_rand(0, 100).", name = 'test'";
+        $sth = $db->prepare($sql);
+
+        $db->beginTransaction(); 
+        $sth->execute();
+        $insertId = $db->lastInsertId('id');
+        $db->commit();
+
+        $this->assertTrue($insertId > 0);
+
+        $sql = "SELECT count(*) AS count FROM test WHERE id = ?";
+        $sth = $db->prepare($sql);
+        $sth->execute(array($insertId));
+        $count = $sth->fetchColumn();
+        $this->assertTrue($count >= 1);
+
+        $sql = "DELETE FROM test where id = ?";
+        $sth = $db->prepare($sql);
+        $this->assertTrue($sth->execute(array($insertId)));
     }
 
-    public function testQuery() {
-        $this->autoId = mt_rand(100000, 999999);
-        $sql = "INSERT INTO test values(:autoId, 'tom')";
-        $count = $this->mysql->query($sql, array('autoId' => $this->autoId));
-        $this->assertEquals($count, 1);
-        $sql = "SELECT * FROM test WHERE id = :autoId";
-        $data = $this->mysql->query($sql, array('autoId' => $this->autoId));
-        $this->assertGreaterThanOrEqual(count($data), 1);
-    }
-
-    public function testGetRow() {
-        $sql = "SELECT * FROM test WHERE id = :autoId";
-        $row = $this->mysql->getRow($sql, array('autoId'=>$this->autoId));
-        $this->assertEquals(count($row), 1);
-    }
 }
 ?>
