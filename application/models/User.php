@@ -28,9 +28,10 @@ class UserModel {
         $sql = "INSERT INTO 
         		wb_user(`username`, `nickname`, `password`, `salt`)
         		VALUES(?, ?, ?, ?)";
-                
+
         $sth = $this->db->prepare($sql);
-        return $sth->execute($data);
+        $sth->execute($data);
+        return $sth->errorCode() === '00000';
     }
 
     public function loginUser($username, $oriPassword) {

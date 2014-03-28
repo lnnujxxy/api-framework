@@ -5,11 +5,19 @@
 class MysqlTest extends PHPUnit_Framework_TestCase {
     /*
      CREATE TABLE `test` (
-      `id` int(11) NOT NULL,
+      `id` int(10) NOT NULL auto_increment,
       `name` varchar(5000) DEFAULT NULL,
       PRIMARY KEY (`id`)
-    ) ENGINE=InnoDB
+    ) ENGINE=InnoDB;
     */
+    public function setUp() {
+        $db = Mysql::getInstance()->getHashConfig()->getDB();
+        $db->exec("drop table test;CREATE TABLE `test` (
+      `id` int(10) NOT NULL auto_increment,
+      `name` varchar(5000) DEFAULT NULL,
+      PRIMARY KEY (`id`)
+    ) ENGINE=InnoDB;");
+    }
 
     public function testGetDB() {
         $db = Mysql::getInstance()->getHashConfig()->getDB();
@@ -38,7 +46,8 @@ class MysqlTest extends PHPUnit_Framework_TestCase {
 
         $sql = "DELETE FROM test where id = ?";
         $sth = $db->prepare($sql);
-        $this->assertTrue($sth->execute(array($insertId)));
+        $sth->execute(array($insertId));
+        $this->assertTrue($sth->errorCode() === '00000');
     }
 
 }

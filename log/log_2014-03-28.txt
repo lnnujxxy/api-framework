@@ -2,3 +2,13 @@
 2014-03-28 0:04:37 - ERROR --> Returned a million search results; 'error'
 2014-03-28 0:04:56 - INFO --> Returned a million search results
 2014-03-28 0:04:56 - ERROR --> Returned a million search results; 'error'
+2014-03-28 0:06:59 - INFO --> Returned a million search results
+2014-03-28 0:06:59 - ERROR --> Returned a million search results; 'error'
+2014-03-28 0:09:49 - INFO --> Returned a million search results
+2014-03-28 0:09:49 - ERROR --> Returned a million search results; 'error'
+2014-03-28 0:09:52 - INFO --> Returned a million search results
+2014-03-28 0:09:52 - ERROR --> Returned a million search results; 'error'
+2014-03-28 0:19:17 - INFO --> Returned a million search results
+2014-03-28 0:19:17 - ERROR --> Returned a million search results; 'error'
+2014-03-28 0:21:14 - INFO --> Returned a million search results
+2014-03-28 0:21:14 - ERROR --> Returned a million search results; 'error'

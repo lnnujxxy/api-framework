@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>login</title>
+    <title>Register</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap.min.css">
@@ -15,15 +15,18 @@
   </head>
   <body>
     <div class="container">
-
-      <form class="form-signin" role="form" method="post" action="/user/login">
-        <h2 class="form-signin-heading">Please sign in</h2>
+      <?php if (isset($msg)) {?>
+      <p class="help-block"><?php echo $msg['errmsg']?></p>
+      <?php } ?>
+      <form class="form-signin" role="form" method="post" action="/user/register">
+        <h2 class="form-signin-heading">Please Sign Up </h2>
         <input name="username" type="text" class="form-control" placeholder="Username" required autofocus>
+        <input name="nickname" type="text" class="form-control"placeholder="Nickname">
         <input name="password" type="password" class="form-control" placeholder="Password" required>
+        <input type="hidden" name="doRegister" value="1">
         <label class="checkbox">
           <input type="checkbox" value="remember-me"> Remember me
         </label>
-        <input type="hidden" name="doLogin" value="1" />
         <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
       </form>
 

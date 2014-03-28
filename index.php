@@ -5,5 +5,6 @@ if (isset($_SERVER['env']) &&  $_SERVER['env'] === 'development') {
 } else {
 	$application = new Yaf_Application(APPLICATION_PATH . '/conf/application.ini', 'product');
 }
+
 $application->bootstrap()->run();
 ?>
