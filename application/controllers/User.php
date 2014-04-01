@@ -40,13 +40,19 @@ class UserController extends Yaf_Controller_Abstract {
 
 			$db = Mysql::getInstance()->getHashConfig()->getDB();
 			if (!UserModel::getInstance()->setDB($db)->loginUser($username, $password)) {
+				
 				$msg = array(
 					'errno' => self::ERROR_NO_LOGIN_FAILURE,
 					'errmsg' => self::ERROR_MSG_LOGIN_FAILURE,
 				);
 				$this->getView()->assign('msg', $msg);
+
 				return true;
 			} else {
+				$user = UserModel::getInstance()->setDB($db)->getUser($username);
+				Yaf_Session::getInstance()->start();
+				Yaf_Session::getInstance()->set('user_info', Crypt::execute($user));
+
 				$this->forward("feed", "list");
 				return false;
 			}
@@ -81,19 +87,33 @@ class UserController extends Yaf_Controller_Abstract {
 			
 			$db = Mysql::getInstance()->getHashConfig()->getDB();
 			if (!UserModel::getInstance()->setDB($db)->registerUser(array_values($params))) {
+				
 				$msg = array(
 					'errno' => self::ERROR_NO_REGISTER_FAILURE,
 					'errmsg' => self::ERROR_MSG_REGISTER_FAILURE,
 				);
+				
 				$this->getView()->assign('msg', $msg);
 				return true;
 			} else {
+
+				unset($params['password'], $params['salt']);
+				Yaf_Session::getInstance()->start();
+				Yaf_Session::getInstance()->set('user_info', Crypt::execute(json_encode($params)));
+
 				$this->forward("feed", "list");
 				return false;
 			}
 		}
 
 		return true;
+	}
+
+	public function logoutAction() {
+		
+		Yaf_Session::getInstance()->del('user_info');
+		unset(Yaf_Session::getInstance()->user_info);
+		return false;
 	}
 
 	private function checkLoginParams($params) {

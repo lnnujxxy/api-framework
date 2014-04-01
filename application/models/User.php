@@ -48,7 +48,7 @@ class UserModel {
     }
 
     public function getUser($username) {
-        $sql = "SELECT `username`, `nickname`, `password`, `salt` 
+        $sql = "SELECT `username`, `nickname` 
                 FROM wb_user WHERE `username` = ?";
         
         $sth = $this->db->prepare($sql);
