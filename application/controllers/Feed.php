@@ -11,8 +11,14 @@ class FeedController extends Yaf_Controller_Abstract {
 	 *
      */
 	public function listAction() {
+		
+		if (!UserModel::getInstance()->isLogin()) {
+			exit('please login!');
+		}
+		
 		echo "list";
-		exit;
+		return false;
+
 	}
 
 }

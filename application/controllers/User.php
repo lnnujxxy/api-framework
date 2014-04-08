@@ -50,9 +50,7 @@ class UserController extends Yaf_Controller_Abstract {
 				return true;
 			} else {
 				$user = UserModel::getInstance()->setDB($db)->getUser($username);
-				Yaf_Session::getInstance()->start();
-				Yaf_Session::getInstance()->set('user_info', Crypt::execute($user));
-
+				UserModel::getInstance()->setSession($user);
 				$this->forward("feed", "list");
 				return false;
 			}
@@ -62,13 +60,13 @@ class UserController extends Yaf_Controller_Abstract {
 	}
 
 	public function registerAction() {
+
 		if ($this->getRequest()->getPost('doRegister', '')) {
 
 			$username = $this->getRequest()->getPost('username', '');
 			$nickname = $this->getRequest()->getPost('nickname', '');
 			$password = $this->getRequest()->getPost('password', '');
 			$salt = md5(microtime(true).mt_rand(1000000, 9999999));
-
 			$params = array(
 				'username' => $username,
 				'nickname' => $nickname,
@@ -86,7 +84,8 @@ class UserController extends Yaf_Controller_Abstract {
 			}
 			
 			$db = Mysql::getInstance()->getHashConfig()->getDB();
-			if (!UserModel::getInstance()->setDB($db)->registerUser(array_values($params))) {
+
+			if (!($params['uid'] = UserModel::getInstance()->setDB($db)->registerUser(array_values($params)))) {
 				
 				$msg = array(
 					'errno' => self::ERROR_NO_REGISTER_FAILURE,
@@ -96,24 +95,23 @@ class UserController extends Yaf_Controller_Abstract {
 				$this->getView()->assign('msg', $msg);
 				return true;
 			} else {
-
 				unset($params['password'], $params['salt']);
-				Yaf_Session::getInstance()->start();
-				Yaf_Session::getInstance()->set('user_info', Crypt::execute(json_encode($params)));
-
+				UserModel::getInstance()->setSession($params);
 				$this->forward("feed", "list");
 				return false;
 			}
+			
 		}
 
 		return true;
+
 	}
 
 	public function logoutAction() {
 		
-		Yaf_Session::getInstance()->del('user_info');
-		unset(Yaf_Session::getInstance()->user_info);
+		UserModel::getInstance()->delSession();
 		return false;
+
 	}
 
 	private function checkLoginParams($params) {

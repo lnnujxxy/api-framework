@@ -5,6 +5,8 @@
  * @author zhouweiwei
  */
 class UserModel {
+    const KEY_USER_INFO = 'user_info';
+
 	private $db = null;
     public static $instance = null; 
 
@@ -25,16 +27,29 @@ class UserModel {
     }
 
     public function registerUser($data) {
+
         $sql = "INSERT INTO 
         		wb_user(`username`, `nickname`, `password`, `salt`)
         		VALUES(?, ?, ?, ?)";
-
         $sth = $this->db->prepare($sql);
-        $sth->execute($data);
-        return $sth->errorCode() === '00000';
+
+        $insertId = 0;
+        try {
+            $this->db->beginTransaction();
+            $sth->execute($data);
+            $insertId = $this->db->lastInsertId(); 
+            $this->db->commit(); 
+        } catch(PDOExecption $e) { 
+            $this->db->rollback(); 
+            Logger::getInstance(APPLICATION_PATH.'log', Logger::ERR)->logError($e->getMessage());
+        } 
+        
+        return $insertId;
+
     }
 
     public function loginUser($username, $oriPassword) {
+
         $row = $this->getUser($username);
 
         if (!$row || !$row['username'] || !$row['password']) {
@@ -44,31 +59,44 @@ class UserModel {
         if (!$this->verifyPassword($row['password'], $oriPassword, $row['salt'])) {
             return false;
         }
+
         return true;
+
     }
 
     public function getUser($username) {
-        $sql = "SELECT `username`, `nickname` 
+
+        $sql = "SELECT `uid`, `username`, `nickname` 
                 FROM wb_user WHERE `username` = ?";
         
         $sth = $this->db->prepare($sql);
         $sth->execute(array($username));
 
         return $sth->fetch(PDO::FETCH_ASSOC);
+
     }
 
     public function delUser($username) {
-        $sql = "DELETE FROM wb_user WHERE `username` = ?";
 
+        $sql = "DELETE FROM wb_user WHERE `username` = ?";
         $sth = $this->db->prepare($sql);
-        return $sth->execute(array($username));
+
+        try {
+            return $sth->execute(array($username));
+        } catch(PDOExecption $e) { 
+            Logger::getInstance(APPLICATION_PATH.'log', Logger::ERR)->logError($e->getMessage());
+        } 
+
     }
     
     public function verifyPassword($password, $oriPassword, $salt) {
+
         return $password === $this->hashPassword($oriPassword, $salt);
+
     }
 
     public function hashPassword($password, $salt) {
+
         if (function_exists('password_hash')) {
             $options = array(
                 "cost" => 10, 
@@ -78,6 +106,40 @@ class UserModel {
         } else {
             return crypt($password, $salt);
         }
+
+    }
+
+    public function setSession($params) {
+
+        Yaf_Session::getInstance()->start();
+        Yaf_Session::getInstance()->set(self::KEY_USER_INFO, Crypt::execute(json_encode($params)));
+    
+    }
+
+    public function getSession() {
+
+        $crypt = Yaf_Session::getInstance()->get(self::KEY_USER_INFO);
+
+        if ($crypt) {
+            $json = Crypt::execute($crypt, 'decrypt');
+            return json_decode($json, true);
+        }
+        return array();
+
+    }
+
+    public function delSession() {
+
+        Yaf_Session::getInstance()->del(self::KEY_USER_INFO);
+        unset(Yaf_Session::getInstance()->user_info);
+
+    }
+
+    public function isLogin() {
+
+        $session = $this->getSession();
+        return isset($session['username']) && $session['username'];
+
     }
 
     private function __clone() {

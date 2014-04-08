@@ -60,8 +60,7 @@ class Mysql {
 			$this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		
 		} catch (PDOException $e) {
-			//Logger::getInstance(APPLICATION_PATH.'log', Logger::INFO)->logError($e->getMessage());
-			throw new Exception($e->getMessage());
+			Logger::getInstance(APPLICATION_PATH.'log', Logger::ERR)->logError($e->getMessage());
 		}
 		return $this->pdo;
 	}
