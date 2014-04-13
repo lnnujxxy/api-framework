@@ -1,5 +1,5 @@
 <?php
-//php cli.php request_uri="/index/index" "param='value'"
+//php cli.php request_uri="/index/cli" "aaa=111&bbb=222"
 
 define('APPLICATION_PATH', dirname(__FILE__));
 

@@ -15,7 +15,6 @@ class IndexController extends Yaf_Controller_Abstract {
 	public function indexAction($name = "Stranger") {
 		//1. fetch query
 		$get = $this->getRequest()->getQuery("get", "default value");
-
 		//2. fetch model
 		$model = new SampleModel();
 
@@ -28,15 +27,22 @@ class IndexController extends Yaf_Controller_Abstract {
 	}
 
 	public function redisAction() {
-		if ($this->getRequest()->isCli()) {
-			parse_str($_SERVER['argv'][2]);
-		}
+		
 
 		$redis = RedisClient::getInstance("default")->getHashConfig("hash")->getRedis();
 		
 		$redis->set("redis", $var);
 		echo $redis->get("redis")."\r\n";
 		
+		return FALSE;
+	}
+
+	public function cliAction() {
+
+		if ($this->getRequest()->isCli()) {
+			parse_str($_SERVER['argv'][2], $params);
+		}
+
 		return FALSE;
 	}
 }
