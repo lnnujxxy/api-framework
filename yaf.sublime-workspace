@@ -4,12 +4,60 @@
 		"selected_items":
 		[
 			[
-				"in",
-				"insertId"
+				"SE",
+				"SESSION_USER_INFO"
 			],
 			[
-				"SE",
-				"_SEVER"
+				"pa",
+				"params"
+			],
+			[
+				"p",
+				"params"
+			],
+			[
+				"s",
+				"salt"
+			],
+			[
+				"exec",
+				"execute"
+			],
+			[
+				"pre",
+				"prepare"
+			],
+			[
+				"passw",
+				"password_hash"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"user",
+				"userModel"
+			],
+			[
+				"User",
+				"userModel"
+			],
+			[
+				"crypt",
+				"cryptPassword"
+			],
+			[
+				"SS",
+				"SSDBClient"
+			],
+			[
+				"func_get",
+				"func_get_args"
+			],
+			[
+				"in",
+				"insertId"
 			],
 			[
 				"pro",
@@ -103,14 +151,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "index.php",
-			"settings":
-			{
-				"buffer_size": 357,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -144,21 +184,40 @@
 	},
 	"file_history":
 	[
-		"/home/zhouweiwei/htdocs/yaf/index.php",
-		"/home/zhouweiwei/htdocs/yaf/application/library/SimpleRedis.php",
-		"/home/zhouweiwei/htdocs/yaf/application/library/Mysql.php",
-		"/home/zhouweiwei/htdocs/yaf/conf/application.ini",
-		"/home/zhouweiwei/htdocs/yaf/test/library/SimpleRedisTest.php",
 		"/home/zhouweiwei/htdocs/yaf/application/controllers/Index.php",
-		"/home/zhouweiwei/htdocs/yaf/test/library/SimpleSSDBTest.php",
+		"/home/zhouweiwei/htdocs/yaf/cli.php",
+		"/home/zhouweiwei/htdocs/yaf/application/controllers/User.php",
+		"/home/zhouweiwei/htdocs/yaf/application/controllers/Feed.php",
+		"/home/zhouweiwei/htdocs/yaf/application/views/user/login.phtml",
+		"/home/zhouweiwei/htdocs/yaf/application/views/user/register.phtml",
+		"/home/zhouweiwei/htdocs/yaf/application/models/User.php",
+		"/home/zhouweiwei/htdocs/yaf/application/library/Logger.php",
+		"/home/zhouweiwei/htdocs/yaf/application/library/Crypt.php",
+		"/home/zhouweiwei/htdocs/yaf/application/library/Mysql.php",
+		"/home/zhouweiwei/htdocs/yaf/test/models/UserTest.php",
 		"/home/zhouweiwei/htdocs/yaf/test/library/MysqlTest.php",
+		"/home/zhouweiwei/htdocs/yaf/conf/application.ini",
+		"/home/zhouweiwei/htdocs/yaf/application/library/RedisClient.php",
+		"/home/zhouweiwei/htdocs/yaf/index.php",
+		"/home/zhouweiwei/htdocs/yaf/yaf.sublime-project",
+		"/home/zhouweiwei/htdocs/yaf/application/library/password.php",
+		"/home/zhouweiwei/下载/intf/src/application/include/logging/bootstrap.php",
+		"/home/zhouweiwei/下载/workspace/intf/src/application/include/logging/bootstrap.php",
+		"/home/zhouweiwei/下载/workspace/intf-copy/src/application/include/logging/bootstrap.php",
+		"/home/zhouweiwei/下载/dist/css/bootstrap-theme.min.css",
+		"/home/zhouweiwei/htdocs/php-yaf/requests/yaf_request_http.c",
+		"/home/zhouweiwei/htdocs/yaf/test/library/RedisClientTest.php",
+		"/home/zhouweiwei/htdocs/yaf/application/library/SSDBClient.php",
+		"/home/zhouweiwei/htdocs/yaf/test/library/SSDBClientTest.php",
+		"/home/zhouweiwei/htdocs/yaf/application/library/SimpleSSDB.php",
+		"/home/zhouweiwei/htdocs/yaf/test/library/SimpleRedisTest.php",
+		"/home/zhouweiwei/htdocs/yaf/application/library/SimpleRedis.php",
+		"/home/zhouweiwei/htdocs/yaf/test/library/SimpleSSDBTest.php",
 		"/home/zhouweiwei/htdocs/yaf/test/library/CipherTest.php",
 		"/home/zhouweiwei/桌面/nginx php 优化",
-		"/home/zhouweiwei/htdocs/yaf/application/library/Logger.php",
 		"/home/zhouweiwei/htdocs/yaf/application/library/Cipher.php",
 		"/home/zhouweiwei/bench.php",
 		"/home/zhouweiwei/htdocs/software/memcached",
-		"/home/zhouweiwei/htdocs/yaf/application/library/SimpleSSDB.php",
 		"/home/zhouweiwei/htdocs/yaf/application/library/Logger",
 		"/home/zhouweiwei/htdocs/yaf/test/bootstrap.php",
 		"/home/zhouweiwei/htdocs/yaf/test/phpunit.xml",
@@ -221,13 +280,14 @@
 	],
 	"find":
 	{
-		"height": 44.0
+		"height": 64.0
 	},
 	"find_in_files":
 	{
 		"height": 0.0,
 		"where_history":
 		[
+			"/home/zhouweiwei/htdocs/php-yaf",
 			"/home/zhouweiwei/htdocs/yaf",
 			"/home/zhouweiwei/htdocs/yaf,*.php",
 			"/home/zhouweiwei/htdocs/php-code/CodeIgniter,*.php",
@@ -247,6 +307,27 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"user_info",
+			"\"",
+			"paramsToData",
+			"wx_user",
+			"parameter",
+			"        ",
+			"mysql",
+			"//$",
+			"cryptPassword",
+			"checkRegisterParams",
+			"init",
+			"Index",
+			"yaf_request_http_instance",
+			"request_uri",
+			"SimpleSSDB",
+			"simple",
+			"instances",
+			"SimpleSSDB",
+			"SimpleRedis",
+			"simpleRedis",
+			"easy",
 			"6380",
 			"1234",
 			"DESC",
@@ -332,6 +413,11 @@
 		"regex": false,
 		"replace_history":
 		[
+			"'",
+			"wb_user",
+			"User",
+			"SSDBClient",
+			"RedisClient",
 			"NAME",
 			"",
 			"Logger",
@@ -354,35 +440,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "index.php",
-					"settings":
-					{
-						"buffer_size": 357,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								357,
-								357
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -419,7 +478,7 @@
 	"menu_visible": true,
 	"replace":
 	{
-		"height": 64.0
+		"height": 82.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -427,6 +486,30 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"lo",
+				"application/library/Logger.php"
+			],
+			[
+				"mysq",
+				"application/library/Mysql.php"
+			],
+			[
+				"fee",
+				"application/controllers/Feed.php"
+			],
+			[
+				"",
+				"yaf.sublime-project"
+			],
+			[
+				"mysql",
+				"test/library/MysqlTest.php"
+			],
+			[
+				"user",
+				"application/models/User.php"
+			],
 			[
 				"uri",
 				"system/core/URI.php"
@@ -482,6 +565,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 182.0,
+	"side_bar_width": 197.0,
 	"status_bar_visible": false
 }
