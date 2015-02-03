@@ -2,7 +2,8 @@
 	"folders":
 	[
 		{
-			"path": "/home/zhouweiwei/htdocs/yaf"
+			"follow_symlinks": true,
+			"path": "."
 		}
 	]
 }

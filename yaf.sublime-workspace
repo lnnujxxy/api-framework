@@ -4,158 +4,266 @@
 		"selected_items":
 		[
 			[
-				"SE",
-				"SESSION_USER_INFO"
+				"array_un",
+				"array_unshift"
 			],
 			[
-				"pa",
-				"params"
+				"so",
+				"softs"
+			],
+			[
+				"qu",
+				"queryStr"
+			],
+			[
+				"confi",
+				"config"
+			],
+			[
+				"ban",
+				"banSoftIds"
+			],
+			[
+				"pac",
+				"package"
+			],
+			[
+				"pack",
+				"packages"
+			],
+			[
+				"json",
+				"json_decode"
+			],
+			[
+				"sof",
+				"softId"
+			],
+			[
+				"imp",
+				"import_value"
+			],
+			[
+				"error",
+				"error_reporting"
 			],
 			[
 				"p",
-				"params"
+				"package"
 			],
 			[
-				"s",
-				"salt"
+				"pak",
+				"package"
 			],
 			[
-				"exec",
-				"execute"
+				"getP",
+				"getPackageByPids"
 			],
 			[
-				"pre",
-				"prepare"
+				"fri",
+				"friendModel"
 			],
 			[
-				"passw",
-				"password_hash"
+				"fir",
+				"friendFriends"
 			],
 			[
-				"pass",
-				"password"
+				"frien",
+				"friendModel"
 			],
 			[
-				"user",
-				"userModel"
+				"getIn",
+				"getInstance"
 			],
 			[
-				"User",
-				"userModel"
+				"frie",
+				"friendModel"
 			],
 			[
-				"crypt",
-				"cryptPassword"
+				"ex",
+				"existPnames"
 			],
 			[
-				"SS",
-				"SSDBClient"
+				"friend",
+				"friendModel"
 			],
 			[
-				"func_get",
-				"func_get_args"
+				"new",
+				"newPnames"
 			],
 			[
-				"in",
-				"insertId"
+				"exi",
+				"existPnames"
 			],
 			[
-				"pro",
-				"prototype"
+				"getIN",
+				"getInstance"
 			],
 			[
-				"po",
-				"props"
+				"config",
+				"configNum"
 			],
 			[
-				"C",
-				"Child"
+				"is_nu",
+				"is_numeric"
 			],
 			[
-				"cons",
-				"console"
+				"friends_",
+				"friend_nums"
 			],
 			[
-				"check",
-				"checkbox"
+				"is_",
+				"is_array"
 			],
 			[
-				"getE",
-				"getElementById"
+				"self",
+				"selfInfos"
 			],
 			[
-				"class",
-				"className"
+				"Cac",
+				"CACHE_TTL"
 			],
 			[
-				"last",
-				"lastIndex"
+				"getI",
+				"getInstance"
 			],
 			[
-				"getEl",
-				"getElementsByTagName"
+				"debug",
+				"debugLog"
 			],
 			[
-				"en",
-				"enabled"
+				"deb",
+				"debugLog"
 			],
 			[
-				"mo",
-				"moduleMethod"
+				"is_res",
+				"is_refresh"
 			],
 			[
-				"Mo",
-				"Module1"
+				"PR",
+				"PROJECT_USER_CACHE"
 			],
 			[
-				"module",
-				"moduleMethod"
+				"fr",
+				"friends_num"
 			],
 			[
-				"private",
-				"privateVar"
+				"all",
+				"allApps"
 			],
 			[
-				"modu",
-				"module"
+				"app",
+				"appinfos"
 			],
 			[
-				"mod",
-				"module3"
+				"min",
+				"minimize"
 			],
 			[
-				"con",
-				"constructor"
+				"pnam",
+				"pname"
 			],
 			[
-				"P",
-				"Parent"
+				"pname",
+				"pnames"
 			],
 			[
-				"arg",
-				"arguments"
+				"tem",
+				"template"
 			],
 			[
-				"this",
-				"thisArg"
+				"subst",
+				"substr_count"
 			],
 			[
-				"ar",
-				"arguments"
+				"array_co",
+				"array_column"
 			],
 			[
-				"get",
-				"getName"
+				"frine",
+				"friendPnames"
+			],
+			[
+				"frend",
+				"friendPnames"
+			],
+			[
+				"ff",
+				"ffmbs"
+			],
+			[
+				"b",
+				"be_friend_each_other"
+			],
+			[
+				"dk",
+				"dkeyDEcode"
+			],
+			[
+				"js",
+				"json_encode"
+			],
+			[
+				"PRO",
+				"PROJECT_USER_PNAMES"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "index.php",
+			"settings":
+			{
+				"buffer_size": 357,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/controllers/Base.php",
+			"settings":
+			{
+				"buffer_size": 989,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "cli.php",
+			"settings":
+			{
+				"buffer_size": 497,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/views/index/index.phtml",
+			"settings":
+			{
+				"buffer_size": 41,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "conf/application.ini",
+			"settings":
+			{
+				"buffer_size": 705,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "sftp-config.json",
+			"settings":
+			{
+				"buffer_size": 1241,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 159.0,
+		"height": 342.0,
 		"selected_items":
 		[
 			[
@@ -163,15 +271,27 @@
 				"Package Control: Install Package"
 			],
 			[
-				"instll",
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
 				"Package Control: Install Package"
 			]
 		],
-		"width": 449.0
+		"width": 528.0
 	},
 	"console":
 	{
-		"height": 216.0
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
 	},
 	"distraction_free":
 	{
@@ -182,230 +302,291 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/D/workspace/yaf-project",
+		"/D/workspace/yaf-project/application",
+		"/D/workspace/yaf-project/application/controllers",
+		"/D/workspace/yaf-project/application/modules",
+		"/D/workspace/yaf-project/application/views",
+		"/D/workspace/yaf-project/application/views/index"
+	],
 	"file_history":
 	[
-		"/home/zhouweiwei/htdocs/yaf/application/controllers/Index.php",
-		"/home/zhouweiwei/htdocs/yaf/cli.php",
-		"/home/zhouweiwei/htdocs/yaf/application/controllers/User.php",
-		"/home/zhouweiwei/htdocs/yaf/application/controllers/Feed.php",
-		"/home/zhouweiwei/htdocs/yaf/application/views/user/login.phtml",
-		"/home/zhouweiwei/htdocs/yaf/application/views/user/register.phtml",
-		"/home/zhouweiwei/htdocs/yaf/application/models/User.php",
-		"/home/zhouweiwei/htdocs/yaf/application/library/Logger.php",
-		"/home/zhouweiwei/htdocs/yaf/application/library/Crypt.php",
-		"/home/zhouweiwei/htdocs/yaf/application/library/Mysql.php",
-		"/home/zhouweiwei/htdocs/yaf/test/models/UserTest.php",
-		"/home/zhouweiwei/htdocs/yaf/test/library/MysqlTest.php",
-		"/home/zhouweiwei/htdocs/yaf/conf/application.ini",
-		"/home/zhouweiwei/htdocs/yaf/application/library/RedisClient.php",
-		"/home/zhouweiwei/htdocs/yaf/index.php",
-		"/home/zhouweiwei/htdocs/yaf/yaf.sublime-project",
-		"/home/zhouweiwei/htdocs/yaf/application/library/password.php",
-		"/home/zhouweiwei/下载/intf/src/application/include/logging/bootstrap.php",
-		"/home/zhouweiwei/下载/workspace/intf/src/application/include/logging/bootstrap.php",
-		"/home/zhouweiwei/下载/workspace/intf-copy/src/application/include/logging/bootstrap.php",
-		"/home/zhouweiwei/下载/dist/css/bootstrap-theme.min.css",
-		"/home/zhouweiwei/htdocs/php-yaf/requests/yaf_request_http.c",
-		"/home/zhouweiwei/htdocs/yaf/test/library/RedisClientTest.php",
-		"/home/zhouweiwei/htdocs/yaf/application/library/SSDBClient.php",
-		"/home/zhouweiwei/htdocs/yaf/test/library/SSDBClientTest.php",
-		"/home/zhouweiwei/htdocs/yaf/application/library/SimpleSSDB.php",
-		"/home/zhouweiwei/htdocs/yaf/test/library/SimpleRedisTest.php",
-		"/home/zhouweiwei/htdocs/yaf/application/library/SimpleRedis.php",
-		"/home/zhouweiwei/htdocs/yaf/test/library/SimpleSSDBTest.php",
-		"/home/zhouweiwei/htdocs/yaf/test/library/CipherTest.php",
-		"/home/zhouweiwei/桌面/nginx php 优化",
-		"/home/zhouweiwei/htdocs/yaf/application/library/Cipher.php",
-		"/home/zhouweiwei/bench.php",
-		"/home/zhouweiwei/htdocs/software/memcached",
-		"/home/zhouweiwei/htdocs/yaf/application/library/Logger",
-		"/home/zhouweiwei/htdocs/yaf/test/bootstrap.php",
-		"/home/zhouweiwei/htdocs/yaf/test/phpunit.xml",
-		"/home/zhouweiwei/htdocs/yaf/test/library/Mysqltest.php",
-		"/home/zhouweiwei/htdocs/yaf/application/Bootstrap.php",
-		"/home/zhouweiwei/桌面/无标题文档",
-		"/home/zhouweiwei/桌面/text.txt 的片段",
-		"/home/zhouweiwei/桌面/php install.txt",
-		"/home/zhouweiwei/桌面/nginx fpm socket.conf",
-		"/home/zhouweiwei/桌面/login.html",
-		"/home/zhouweiwei/htdocs/js/1-5.html",
-		"/home/zhouweiwei/htdocs/js_lib/Get.js",
-		"/home/zhouweiwei/htdocs/js_lib/Inherit.js",
-		"/home/zhouweiwei/htdocs/js/1_1.html",
-		"/home/zhouweiwei/htdocs/js_lib/EventUtil.js",
-		"/home/zhouweiwei/htdocs/js_lib/DomReady.js",
-		"/home/zhouweiwei/htdocs/js/domReady.js",
-		"/home/zhouweiwei/htdocs/js/1-4.html",
-		"/home/zhouweiwei/htdocs/js_lib/domReady.js",
-		"/home/zhouweiwei/htdocs/php-code/CodeIgniter/index.php",
-		"/home/zhouweiwei/htdocs/php-code/CodeIgniter/system/core/Router.php",
-		"/home/zhouweiwei/htdocs/php-code/CodeIgniter/application/config/config.php",
-		"/home/zhouweiwei/桌面/util.js",
-		"/home/zhouweiwei/下载/Util js┐т.js",
-		"/home/zhouweiwei/htdocs/js/test.html",
-		"/home/zhouweiwei/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
-		"/home/zhouweiwei/.cache/.fr-z4XeXD/Ch09/client.js",
-		"/home/zhouweiwei/htdocs/php-code/CodeIgniter/system/core/URI.php",
-		"/home/zhouweiwei/htdocs/php-code/CodeIgniter/application/config/routes.php",
-		"/home/zhouweiwei/htdocs/php-code/CodeIgniter/system/core/CodeIgniter.php",
-		"/home/zhouweiwei/htdocs/php-code/CodeIgniter/application/controllers/Welcome.php",
-		"/home/zhouweiwei/htdocs/php-code/CodeIgniter/application/controllers/smartytest.php",
-		"/home/zhouweiwei/htdocs/php-code/CodeIgniter/application/libraries/MY_Parser.php",
-		"/home/zhouweiwei/htdocs/php-code/CodeIgniter/system/core/Input.php",
-		"/home/zhouweiwei/htdocs/php-code/CodeIgniter/system/core/Common.php",
-		"/home/zhouweiwei/htdocs/php-code/CodeIgniter/system/core/Exceptions.php",
-		"/home/zhouweiwei/htdocs/php-code/CodeIgniter/system/core/Hooks.php",
-		"/home/zhouweiwei/htdocs/php-code/CodeIgniter/system/core/Loader.php",
-		"/home/zhouweiwei/htdocs/php-code/CodeIgniter/application/config/hooks.php",
-		"/home/zhouweiwei/htdocs/php-code/CodeIgniter/application/hooks/Myclass.php",
-		"/home/zhouweiwei/htdocs/js/jquery/plugins/jquery-cookie/test/test.html",
-		"/home/zhouweiwei/htdocs/js/jquery/plugins/jquery-cookie/test/module.js",
-		"/home/zhouweiwei/htdocs/js/jquery/plugins/jquery-cookie/test/extend_module.js",
-		"/home/zhouweiwei/htdocs/js/jquery/plugins/jquery-cookie/test/index.html",
-		"/home/zhouweiwei/htdocs/js/jquery/plugins/jquery-cookie/jquery.cookie.js",
-		"/home/zhouweiwei/htdocs/js/jquery/plugins/jquery-metadata/jquery.metadata.js",
-		"/home/zhouweiwei/htdocs/js/jquery/plugins/jQuery-File-Upload/js/jquery.fileupload.js",
-		"/home/zhouweiwei/htdocs/c/annotated_redis_source/src/sds.c",
-		"/home/zhouweiwei/htdocs/js/Base.js/base.js",
-		"/home/zhouweiwei/htdocs/js/Base.js/base.html",
-		"/home/zhouweiwei/htdocs/c/annotated_redis_source/src/redis.c",
-		"/home/zhouweiwei/htdocs/c/annotated_redis_source/src/Makefile",
-		"/home/zhouweiwei/htdocs/c/annotated_redis_source/src/sds.h",
-		"/home/zhouweiwei/下载/workspace/intf/intf.sublime-project",
-		"/home/zhouweiwei/htdocs/php-code/php-src/ext/date/php_date.c",
-		"/home/zhouweiwei/htdocs/php-code/php-src/ext/calendar/calendar.c",
-		"/home/zhouweiwei/htdocs/php-code/php-src/ext/curl/interface.c",
-		"/usr/share/applications/sublime.desktop",
-		"/usr/share/applications/defaults.list"
+		"/D/workspace/yaf-project/application/controllers/Index.php",
+		"/D/workspace/openbox/cron/user.php",
+		"/D/workspace/openbox/shell/user.sh",
+		"/D/workspace/openbox/cron/user_login.php",
+		"/D/workspace/openbox/cron/user_free_cache.php",
+		"/D/workspace/openbox/cron/user_info_consumer.php",
+		"/D/workspace/openbox/src/application/include/Utility.php",
+		"/D/workspace/openbox/config/crontab.conf",
+		"/D/workspace/openbox/cron/crontab_composite_community.php",
+		"/D/workspace/openbox/cron/choose_user.php",
+		"/D/workspace/openbox/cron/crontab_pnames.php",
+		"/D/workspace/openbox/cron/crontab_daily_new_install.php",
+		"/D/workspace/openbox/cron/crontab_topic_card.php",
+		"/D/workspace/openbox/cron/crontab_friends.php",
+		"/D/workspace/openbox/cron/rsync_qcms_thirdzhushou_file.php.orig",
+		"/D/workspace/openbox/config/fastcgi_cache.conf",
+		"/D/workspace/openbox/src/application/models/FreeModel.php",
+		"/D/workspace/openbox/src/application/models/DetailModel.php",
+		"/D/workspace/openbox/cron/api_update_full.php",
+		"/D/workspace/openbox/sftp-config.json",
+		"/D/workspace/openbox/src/www/config.inc.php",
+		"/D/workspace/openbox/cron/crontab_privilege.php",
+		"/D/workspace/openbox/cron/crontab_move_info.php",
+		"/D/workspace/openbox/cron/sync_data.php",
+		"/D/workspace/openbox/src/application/controllers/AppController.php",
+		"/D/workspace/openbox/cron/crontab_find_user.php",
+		"/D/workspace/openbox/src/application/controllers/DetailController.php",
+		"/D/workspace/openbox/tools/deploy.sh",
+		"/D/workspace/openbox/docs/db.sql",
+		"/D/workspace/openbox/src/tools/crontab_del.php",
+		"/D/workspace/openbox/src/application/models/SearchModel.php",
+		"/D/workspace/openbox/src/application/models/PackageModel.php",
+		"/D/workspace/openbox/src/application/include/MongoUser.php",
+		"/D/workspace/openbox/src/application/models/FriendModel.php",
+		"/D/workspace/openbox/src/application/views/scripts/test/dialynewinstall.phtml",
+		"/D/workspace/openbox/src/application/controllers/FreeController.php",
+		"/D/workspace/openbox/cron/api_uninstall.php",
+		"/D/workspace/openbox/cron/book_epub_cache.php",
+		"/D/workspace/openbox/src/application/models/CardModel.php",
+		"/D/workspace/openbox/config/citycode_area.data",
+		"/D/workspace/openbox/src/application/models/CassandraModel.php",
+		"/D/workspace/openbox/src/application/models/LoginUserModel.php",
+		"/D/workspace/openbox/cron/m_recommend_log.php",
+		"/D/workspace/openbox/src/www/auto_load.php",
+		"/D/workspace/openbox/cron/check_package.php",
+		"/D/workspace/openbox/script/include/resty/mongo.lua",
+		"/D/workspace/openbox/shell/monitor.sh",
+		"/D/workspace/openbox/cron/crontab_move_info_test.php",
+		"/D/workspace/openbox/cron/login_user_queue/login_user_consumer.php",
+		"/D/workspace/openbox/src/tools/check_video.php",
+		"/D/workspace/openbox/cron/crontab_user_sync_to_cassandra.php",
+		"/D/workspace/openbox/cron/rsync_qcms_killed.sh",
+		"/D/workspace/openbox/cron/rsync_qcms_file.php",
+		"/D/workspace/openbox/cron/rsync_qcms_thirdzhushou_file.php",
+		"/D/workspace/openbox/src/tools/openbox_yj.sh",
+		"/D/workspace/openbox/script/controller/mintf/getAppsByPackNames.lua",
+		"/D/workspace/openbox/cron/login_user_queue/getweishi/netproto/keys/symmetric_keys.bin",
+		"/D/workspace/openbox/cron/login_user_queue/getweishi/netproto/keys/sasymmetric_keys.bin",
+		"/D/workspace/openbox/cron/login_user_queue/getweishi/netproto/keys/security_keys.bin",
+		"/D/workspace/openbox/shell/sync_cron.sh",
+		"/D/workspace/openbox/src/application/controllers/FriendController.php",
+		"/D/workspace/openbox/src/application/controllers/FreeActivityController.php",
+		"/D/workspace/openbox/QFrame/example/src/www/index.php",
+		"/D/workspace/openbox/src/application/controllers/MobilegameReportController.php",
+		"/D/workspace/openbox/src/application/models/BookEpubModel.php",
+		"/D/workspace/openbox/src/application/controllers/MintfController.php",
+		"/D/workspace/openbox/src/application/controllers/UserController.php",
+		"/D/workspace/openbox/cron/check_subscribe.sh",
+		"/D/workspace/openbox/cron/insert_user_free_queue.php",
+		"/D/workspace/openbox/src/application/models/FreeThirdModel.php",
+		"/D/workspace/openbox/src/application/include/TelecomAES.php",
+		"/D/workspace/openbox/cron/fixed_logo_url_48.php",
+		"/D/workspace/openbox/tools/deploy.minor.diff.sh",
+		"/D/workspace/openbox/src/application/models/FreeSuperUserModel.php",
+		"/D/workspace/openbox/cron/login_user_queue/getweishi/message/type/pb_string.php",
+		"/D/workspace/openbox/cron/crontab_user_sync_to_mongodb.php",
+		"/D/workspace/openbox/cron/crontab_snapshot_free.php",
+		"/D/workspace/openbox/script/include/php/utils.lua",
+		"/D/workspace/openbox/src/application/controllers/ZhuantiController.php",
+		"/D/workspace/openbox/script/include/jit/zlib_h.lua",
+		"/D/workspace/openbox/cron/zs_user_comsumer.php",
+		"/D/workspace/openbox/cron/api_update_diff.php",
+		"/D/workspace/openbox/cron/api_corp.php",
+		"/D/workspace/openbox/docs/API.txt",
+		"/D/workspace/openbox/src/application/controllers/PairController.php",
+		"/D/workspace/openbox/src/application/views/scripts/test/phonelist.phtml",
+		"/C/Users/zhouweiwei-iri/AppData/Roaming/Sublime Text 3/Packages/Alignment/Base File.sublime-settings",
+		"/C/Users/zhouweiwei-iri/AppData/Roaming/Sublime Text 3/Packages/Phpcs/phpcs.sublime-settings",
+		"/C/Users/zhouweiwei-iri/Desktop/1.txt",
+		"/D/workspace/openbox/cron/app_free.php",
+		"/D/workspace/openbox/src/application/config/port.php",
+		"/D/workspace/openbox/cron/a.php",
+		"/D/workspace/openbox/src/application/controllers/QcmsController.php",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/D/workspace/openbox/cron/crontab_redis_to_cassandra.php",
+		"/D/workspace/openbox/cron/free_flow_money_log.php",
+		"/D/workspace/openbox/upgrade/php.sh",
+		"/D/workspace/openbox/src/application/include/phpdes.php",
+		"/D/workspace/openbox/cron/crontab_user_cal_list.php",
+		"/D/workspace/openbox/cron/crontab_free_time_limit.php",
+		"/D/workspace/openbox/cron/crontab_doubi_tag_apps.php",
+		"/D/workspace/openbox/cron/remove_ban_free_user.php",
+		"/D/workspace/openbox/src/application/models/BehaviorModel.php",
+		"/D/workspace/openbox/src/tools/getmarketsoftnum.php",
+		"/D/workspace/openbox/src/application/models/GuessyoulikeModel.php",
+		"/D/workspace/openbox/cron/m_user_free.php",
+		"/D/workspace/openbox/src/application/models/LbsUserModel.php",
+		"/C/Users/zhouweiwei-iri/Desktop/UserController (2).php",
+		"/D/workspace/openbox/cron/monitor_iccid.php",
+		"/D/workspace/openbox/src/application/controllers/IndexController.php",
+		"/D/workspace/openbox/cron/m_app.php",
+		"/D/workspace/openbox/cron/mail/class.pop3.php",
+		"/D/workspace/openbox/push/index.php",
+		"/D/workspace/openbox/src/www/index_nom2.php",
+		"/D/workspace/openbox/install.sh",
+		"/D/workspace/openbox/vendor/QFrame/example/src/application/controllers/IndexController.php",
+		"/D/workspace/openbox/vendor/QFrame/example/src/www/index.php",
+		"/D/workspace/openbox/vendor/QFrame/base/db/QFrameDBExplainResult.php",
+		"/D/workspace/openbox/src/application/views/scripts/error/error.phtml",
+		"/D/workspace/openbox/vendor/QFrame/logger/example.php",
+		"/D/workspace/openbox/shell/time/view.html",
+		"/D/workspace/openbox/README",
+		"/D/workspace/openbox/src/application/config/rankname.php",
+		"/D/workspace/openbox/src/application/models/QcmsTagModel.php",
+		"/D/workspace/openbox/QFrame/QFrame.php",
+		"/D/workspace/openbox/shell/rsyslog.php",
+		"/D/workspace/openbox/src/application/models/RingSearch.php",
+		"/D/workspace/openbox/src/tools/ringcronlist_newest_exec.php"
 	],
 	"find":
 	{
-		"height": 64.0
+		"height": 40.0
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 132.0,
 		"where_history":
 		[
-			"/home/zhouweiwei/htdocs/php-yaf",
-			"/home/zhouweiwei/htdocs/yaf",
-			"/home/zhouweiwei/htdocs/yaf,*.php",
-			"/home/zhouweiwei/htdocs/php-code/CodeIgniter,*.php",
-			"/home/zhouweiwei/htdocs/",
-			"/home/zhouweiwei/htdocs/php-code/Codeigniter,*.php",
-			"/home/zhouweiwei/htdocs/c/annotated_redis_source",
-			"/home/zhouweiwei/",
-			"/home/zhouweiwei/htdocs/php-code/php-src/ext",
-			"/home/zhouweiwei/htdocs/php-code/php-src/",
-			"/home/zhouweiwei/htdocs/php-code/php-src/ext/,",
-			"/h,ome/zhouweiwei/htdocs/php-code/php-src/ext/,",
-			"/home/zhouweiwei/php-codes/php-src/ext"
+			"D:\\workspace\\openbox,*.php"
 		]
 	},
 	"find_state":
 	{
-		"case_sensitive": true,
+		"case_sensitive": false,
 		"find_history":
 		[
-			"user_info",
-			"\"",
-			"paramsToData",
-			"wx_user",
-			"parameter",
-			"        ",
-			"mysql",
-			"//$",
-			"cryptPassword",
-			"checkRegisterParams",
-			"init",
-			"Index",
-			"yaf_request_http_instance",
-			"request_uri",
-			"SimpleSSDB",
-			"simple",
-			"instances",
-			"SimpleSSDB",
-			"SimpleRedis",
-			"simpleRedis",
-			"easy",
-			"6380",
-			"1234",
-			"DESC",
-			"zhouweiwei@zhouweiwei-VPCCW18FC:~",
-			"textkey",
-			"recv_resp",
-			"recv",
-			"send",
-			"send_req",
-			"send",
-			"$this->sock",
-			"check_easy_resp",
-			"zhouweiwei",
-			"NO_ARGUMENTS",
-			"_severityThreshold",
-			"KLogger",
-			"query",
-			"bind",
-			"$sql",
-			"application.directory",
-			" : f",
-			": fun",
-			"function (",
-			"domReady",
-			"_this",
-			"tab",
-			"var domReady = function (ready) {\n\n  var fns = [], fn, f = false\n    , doc = document\n    , testEl = doc.documentElement\n    , hack = testEl.doScroll\n    , domContentLoaded = 'DOMContentLoaded'\n    , addEventListener = 'addEventListener'\n    , onreadystatechange = 'onreadystatechange'\n    , readyState = 'readyState'\n    , loadedRgx = hack ? /^loaded|^c/ : /^loaded|c/\n    , loaded = loadedRgx.test(doc[readyState])\n\n  function flush(f) {\n    loaded = 1\n    while (f = fns.shift()) f()\n  }\n\n  doc[addEventListener] && doc[addEventListener](domContentLoaded, fn = function () {\n    doc.removeEventListener(domContentLoaded, fn, f)\n    flush()\n  }, f)\n\n\n  hack && doc.attachEvent(onreadystatechange, fn = function () {\n    if (/^c/.test(doc[readyState])) {\n      doc.detachEvent(onreadystatechange, fn)\n      flush()\n    }\n  })\n\n  return (ready = hack ?\n    function (fn) {\n      self != top ?\n        loaded ? fn() : fns.push(fn) :\n        function () {\n          try {\n            testEl.doScroll('left')\n          } catch (e) {\n            return setTimeout(function() { ready(fn) }, 50)\n          }\n          fn()\n        }()\n    } :\n    function (fn) {\n      loaded ? fn() : fns.push(fn)\n    })\n}",
-			"ready",
-			"url_suffix",
-			"translate_uri_dashes",
-			"route",
-			"routes",
-			"_set_request",
-			"_validate_request",
-			"routes",
-			"_parse_routes",
-			"_fetch_uri_string",
-			"_parse_query_string",
-			"_remove_relative_directory",
-			"enable_hooks",
-			"enabled",
-			"CI_Hooks::$enabled",
-			"enabled",
-			"segments",
-			"class",
-			"default_controller",
-			"Welcome",
-			"post_controller",
-			"subclass_prefix",
-			"function _exception_handler",
-			"define('BASEPATH'",
-			"BASEPATH",
-			"'BASEPATH'",
-			"define('BASEPATH'",
-			"lua",
-			"luajit",
-			"lua",
-			"sdsRemoveFreeSpace",
-			"sdslen",
-			"SDS_TEST_MAIN",
-			"zmalloc",
-			"get_reids_config",
-			"new Redis()",
-			"try",
-			"'timeout'=>100",
-			"cache.php",
-			"auth=>",
-			"auth=",
-			"pingRedis",
-			"new Redis",
-			"ecalloc",
-			"emalloc",
-			"emalloc\nemalloc\nemalloc",
-			"zend_hash_num_elements",
-			"zend_get_hash_value",
-			"add_assoc_zval",
-			"add_assoc_zval\nadd_assoc_zval",
-			"gedit"
+			"HASHKEY_INFO",
+			"appendNewInstall",
+			"PREFIX_NEW_INSTALL",
+			"cache:new:install",
+			"getNewInstalls",
+			"springFestivalList",
+			"formatList",
+			"filterList",
+			"springFestivalList",
+			"springFestivalOnOff",
+			"springFestivalList",
+			"$map",
+			"map",
+			"springFestivalList",
+			"oss_host",
+			"getPrivilegeDB",
+			"HASHKEY_PRIVILEGE",
+			"6236",
+			"getPrivilegeDB",
+			"get_cache_connection",
+			"$db",
+			"app_free",
+			"preAction",
+			"daypure",
+			"weekpure",
+			"MongoUser",
+			"/zhushou-mobile/trunk/openbox/",
+			"getNewInstalls",
+			"-1001",
+			"1001",
+			"order",
+			"sortO",
+			"sortOr",
+			"resetCache",
+			"getPrivilege",
+			"privilege",
+			"app:detail:privilege",
+			"[ `hostname` = \"zsm02.mapp.zwt.qihoo.net\" ] &&",
+			"multi",
+			"mGet",
+			"PREFIX_NEW_INSTALL",
+			"appendNewInstall",
+			"getInfos",
+			"mongozs.php",
+			"Log.php",
+			"END_FLAG",
+			"CassandraModel",
+			"setInfo",
+			"isUserDownload",
+			"dayDownloadMaxHashKey",
+			"hashKey",
+			"dayDownloadMaxHashKey",
+			"hashMapKey",
+			"subscribeDX",
+			"getUserFreeCacheKey",
+			"USER_FREE_CACHE",
+			"flowService.do",
+			"1069013360921",
+			"friend_in_num",
+			"writeLog",
+			"user_infos_num",
+			"writeLog",
+			"$minimize",
+			"writeLog",
+			" ",
+			"openbox",
+			"checkParams2",
+			"getInfosAction",
+			"getInfos2Action",
+			"checkMobilesHasSelf",
+			"getMbByM2",
+			"storeUserRecord",
+			"getSecretAppConfig",
+			"addUserRelateInfo",
+			"getQidsInfo",
+			"checkFriends",
+			"checkUserInfoSign",
+			"checkParams",
+			"2Action",
+			"switchInfoAction",
+			"switchInfo2Action",
+			"showAppsForFriendsAction",
+			"showAppsForFriends2Action",
+			"checkfriendsfriend2Action",
+			"checkAction",
+			"check2Action",
+			"getInfosAction",
+			"getInfos2Action",
+			"log",
+			"getInfos2Action",
+			"getZhushouRate",
+			"rec",
+			"'href'",
+			"tag2",
+			"2Action",
+			"UserController",
+			"/zhushou-mobile/trunk/openbox/",
+			"friend_num",
+			"friends_num",
+			"default",
+			"friend_num",
+			"2Action",
+			"/zhushou-mobile/trunk/openbox/",
+			"getApps",
+			"getListCache",
+			"2Action",
+			"strpos",
+			"CACHE_TTL",
+			"SORT_DESC",
+			"ffmbs",
+			"friendFriends",
+			"allFriends",
+			"loginUser",
+			"getZhushouRate",
+			"isFree",
+			"whiteListFree",
+			"isFree",
+			"minimize",
+			"$minimize",
+			"pnamesMapFriends",
+			"getApps",
+			"getUserCenterInfo",
+			"fixedApps",
+			"getUserCenterInfo",
+			"pnamesMapFriends",
+			"calUserFriendFriend",
+			"getAppInfosFromPnames",
+			"yunying_data_new"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -413,45 +594,219 @@
 		"regex": false,
 		"replace_history":
 		[
-			"'",
-			"wb_user",
-			"User",
-			"SSDBClient",
-			"RedisClient",
-			"NAME",
 			"",
-			"Logger",
-			":f",
-			" : fun",
-			"function(",
-			"self",
-			"get_redis_config",
-			"'timeout'=>1",
-			"'auth'=>",
-			"auth=>",
-			"sublime"
+			"checkParams",
+			"",
+			"CACHE_TTL",
+			"in_array($_GET['v'], ['3.4.15','3.4.20'])",
+			"$list",
+			"$ext",
+			"3.3.15",
+			"\\n",
+			"$params['qid'] != $userInfo['qid']",
+			"=>"
 		],
 		"reverse": false,
 		"show_context": true,
 		"use_buffer2": true,
 		"whole_word": false,
-		"wrap": true
+		"wrap": false
 	},
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 357,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								357,
+								357
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "application/controllers/Base.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 989,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								806,
+								806
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 192.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "cli.php",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 497,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "application/views/index/index.phtml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 41,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								41,
+								41
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "conf/application.ini",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 705,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								276,
+								276
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "sftp-config.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1241,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								316,
+								316
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 0.0
+		"height": 40.0
 	},
 	"input":
 	{
-		"height": 44.0
+		"height": 49.0
 	},
 	"layout":
 	{
@@ -476,9 +831,18 @@
 		]
 	},
 	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 42.0
+	},
+	"project": "yaf.sublime-project",
 	"replace":
 	{
-		"height": 82.0
+		"height": 76.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -487,68 +851,256 @@
 		"selected_items":
 		[
 			[
-				"lo",
-				"application/library/Logger.php"
-			],
-			[
-				"mysq",
-				"application/library/Mysql.php"
-			],
-			[
-				"fee",
-				"application/controllers/Feed.php"
-			],
-			[
-				"",
-				"yaf.sublime-project"
-			],
-			[
-				"mysql",
-				"test/library/MysqlTest.php"
-			],
-			[
 				"user",
-				"application/models/User.php"
+				"cron\\user.log"
 			],
 			[
-				"uri",
-				"system/core/URI.php"
+				"crontab_d",
+				"cron\\crontab_daily_new_install.php"
+			],
+			[
+				"crontab_pr",
+				"cron\\crontab_privilege.php"
+			],
+			[
+				"freem",
+				"src\\application\\models\\FreeModel.php"
+			],
+			[
+				"freec",
+				"src\\application\\controllers\\FreeController.php"
+			],
+			[
+				"app",
+				"src\\application\\controllers\\AppController.php"
+			],
+			[
+				"crontab_di",
+				"cron\\crontab_daily_new_install.php"
+			],
+			[
+				"friend",
+				"src\\application\\models\\FriendModel.php"
+			],
+			[
+				"crontab",
+				"config\\crontab.conf"
+			],
+			[
+				"crontab.c",
+				"config\\crontab.conf"
+			],
+			[
+				"sync_cr",
+				"shell\\sync_cron.sh"
+			],
+			[
+				"config",
+				"src\\www\\config.inc.php"
+			],
+			[
+				"api_up",
+				"cron\\api_update_full.php"
+			],
+			[
+				"cront",
+				"cron\\crontab_composite_community.php"
+			],
+			[
+				"detal",
+				"src\\application\\models\\DetailModel.php"
+			],
+			[
+				"phonelist",
+				"src\\application\\views\\scripts\\test\\phonelist.phtml"
+			],
+			[
+				"free",
+				"src\\application\\controllers\\FreeController.php"
+			],
+			[
+				"card",
+				"cron\\crontab_topic_card.php"
+			],
+			[
+				"pack",
+				"src\\application\\models\\PackageModel.php"
+			],
+			[
+				"mongou",
+				"src\\application\\include\\MongoUser.php"
+			],
+			[
+				"choo",
+				"cron\\choose_user.php"
+			],
+			[
+				"log",
+				"src\\application\\models\\LoginUserModel.php"
+			],
+			[
+				"ut",
+				"src\\application\\include\\Utility.php"
+			],
+			[
+				"move",
+				"cron\\crontab_move_info.php"
+			],
+			[
+				"mov",
+				"cron\\crontab_move_info_test.php"
+			],
+			[
+				"insert_user_free_queue",
+				"cron\\insert_user_free_queue.php"
+			],
+			[
+				"cronsubscr",
+				"cron\\check_subscribe.sh"
+			],
+			[
+				"util",
+				"src\\application\\include\\Utility.php"
+			],
+			[
+				"freemo",
+				"src\\application\\models\\FreeModel.php"
+			],
+			[
+				"frien",
+				"src\\application\\models\\FriendModel.php"
+			],
+			[
+				"zhu",
+				"src\\application\\controllers\\ZhuantiController.php"
+			],
+			[
+				"freet",
+				"src\\application\\models\\FreeThirdModel.php"
+			],
+			[
+				"fr",
+				"src\\application\\models\\FriendModel.php"
+			],
+			[
+				"cass",
+				"src\\application\\models\\CassandraModel.php"
+			],
+			[
+				"crontab_mo",
+				"cron\\crontab_move_info.php"
+			],
+			[
+				"crontab_redis_to_cassandra.php",
+				"cron\\crontab_redis_to_cassandra.php"
+			],
+			[
+				"login",
+				"src\\application\\models\\LoginUserModel.php"
+			],
+			[
+				"mintf",
+				"src\\application\\controllers\\MintfController.php"
+			],
+			[
+				"indexc",
+				"src\\application\\controllers\\IndexController.php"
+			],
+			[
+				"gues",
+				"src\\application\\models\\GuessyoulikeModel.php"
+			],
+			[
+				"qcms",
+				"src\\application\\controllers\\QcmsController.php"
+			],
+			[
+				"rsysn",
+				"cron\\crontab_user_sync_to_cassandra.php"
+			],
+			[
+				"crontamo",
+				"cron\\crontab_move_info.php"
+			],
+			[
+				"crontab_rs",
+				"cron\\crontab_user_sync_to_cassandra.php"
+			],
+			[
+				"crontab_move_info.php",
+				"cron\\crontab_move_info.php"
+			],
+			[
+				"fri",
+				"src\\application\\models\\FriendModel.php"
+			],
+			[
+				"frie",
+				"src\\application\\models\\FriendModel.php"
+			],
+			[
+				"http",
+				"src\\application\\include\\http.php"
 			],
 			[
 				"route",
-				"system/core/Router.php"
+				"vendor\\QFrame\\web\\QFramerouter.php"
 			],
 			[
-				"wel",
-				"application/controllers/Welcome.php"
+				"www/index",
+				"src\\www\\index.php"
 			],
 			[
-				"hooks",
-				"system/core/Hooks.php"
+				"fre",
+				"src\\application\\models\\FreeModel.php"
 			],
 			[
-				"exceptions",
-				"system/core/Exceptions.php"
+				"loca",
+				"config\\httpd\\location.conf"
 			],
 			[
-				"sds.h",
-				"src/sds.h"
+				"",
+				"src\\application\\models\\CassandraModel.php"
 			],
 			[
-				"sds.c",
-				"src/sds.c"
+				"locat",
+				"config\\httpd\\location.conf"
+			],
+			[
+				"htt",
+				"config\\httpd\\httpd_conf.test.php"
 			],
 			[
 				"config.inc.php",
-				"src/include/config.inc.php"
+				"src\\www\\config.inc.php"
 			],
 			[
-				"cache.php",
-				"config/store/cache.php"
+				"userp",
+				"src\\application\\include\\UserProxy.php"
 			],
 			[
-				"serv",
-				"src/include/server/server_conf.release.php"
+				"crontab_user_",
+				"cron\\crontab_user_sync_to_cassandra.php"
+			],
+			[
+				"crontab_user",
+				"cron\\crontab_user.php"
+			],
+			[
+				"cas",
+				"src\\application\\models\\CassandraModel.php"
+			],
+			[
+				"friendc",
+				"src\\application\\controllers\\FriendController.php"
+			],
+			[
+				"crontab_rsn",
+				"cron\\crontab_user_sync_to_cassandra.php"
+			],
+			[
+				"userc",
+				"src\\application\\controllers\\UserController.php"
 			]
 		],
 		"width": 0.0
@@ -561,10 +1113,25 @@
 		],
 		"width": 0.0
 	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
 	"show_minimap": true,
-	"show_open_files": true,
+	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 197.0,
-	"status_bar_visible": false
+	"side_bar_width": 243.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
 }

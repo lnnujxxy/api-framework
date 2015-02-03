@@ -9,7 +9,7 @@ class SampleModel {
     }   
     
     public function selectSample() {
-        return 'Hello World SampleModel!';
+        return 'Hello World, ';
     }
 
     public function insertSample($arrInfo) {

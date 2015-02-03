@@ -6,13 +6,8 @@
  * @see http://www.php.net/manual/en/class.yaf-controller-abstract.php
  */
 class IndexController extends Yaf_Controller_Abstract {
-
-	/** 
-     * 默认动作
-     * Yaf支持直接把Yaf_Request_Abstract::getParam()得到的同名参数作为Action的形参
-     * 对于如下的例子, 当访问http://yourhost/Sample/index/index/index/name/zhouweiwei 的时候, 你就会发现不同
-     */
-	public function indexAction($name = "Stranger") {
+	
+	public function indexAction($name = "yaf") {
 		//1. fetch query
 		$get = $this->getRequest()->getQuery("get", "default value");
 		//2. fetch model
@@ -26,9 +21,13 @@ class IndexController extends Yaf_Controller_Abstract {
         return TRUE;
 	}
 
-	public function redisAction() {
-		
+	public function helloAction() {
+		echo "hello world";
+		return FALSE;
+	}
 
+	public function redisAction() {
+		$var = $this->getRequest()->getQuery('var', 1);
 		$redis = RedisClient::getInstance("default")->getHashConfig("hash")->getRedis();
 		
 		$redis->set("redis", $var);
@@ -38,10 +37,7 @@ class IndexController extends Yaf_Controller_Abstract {
 	}
 
 	public function cliAction() {
-
-		if ($this->getRequest()->isCli()) {
-			parse_str($_SERVER['argv'][2], $params);
-		}
+		print_r($_SERVER['argv']);
 
 		return FALSE;
 	}
