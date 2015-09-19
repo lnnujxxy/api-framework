@@ -1,15 +1,17 @@
 <?php
-//php cli.php request_uri="/index/cli" "aaa=111&bbb=222"
 
-define('APPLICATION_PATH', dirname(__FILE__));
+//php cli.php request_uri="/queue/cli" "env=test&aaa=111&bbb=222"
+const APPLICATION_PATH = __DIR__;
 
-$_SERVER['env'] = 'development';
-
-if (isset($_SERVER['env']) &&  $_SERVER['env'] === 'development') {
-	$application = new Yaf_Application(APPLICATION_PATH . '/conf/development/application.ini', 'common');
-} else {
-	$application = new Yaf_Application(APPLICATION_PATH . '/conf/product/application.ini', 'common');
+if (isset($argv[2])) {
+	foreach (explode("&", $argv[2]) as $item) {
+		$value = explode("=", $item);
+		${$value[0]} = $value[1];
+	}
 }
 
+isset($env) || $env = 'product';
+$_SERVER['env'] = $env;
+
+$application = new Yaf_Application(APPLICATION_PATH . "/conf/{$env}/application.ini", 'common');
 $application->bootstrap()->getDispatcher()->dispatch(new Yaf_Request_Simple());
-?>

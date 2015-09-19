@@ -1,13 +1,36 @@
 <?php
-define('APPLICATION_PATH', dirname(__FILE__));
-//这个值可以从服务器配置中读取到
-$_SERVER['env'] = 'development';
+const APPLICATION_PATH = __DIR__;
 
-if (isset($_SERVER['env']) &&  $_SERVER['env'] === 'development') {
-	$application = new Yaf_Application(APPLICATION_PATH . '/conf/development/application.ini', 'common');
+if ($_SERVER['env'] === 'test') {
+	$env = 'test';
+} elseif ($_SERVER['env'] === 'stage') {
+	$env = 'stage';
 } else {
-	$application = new Yaf_Application(APPLICATION_PATH . '/conf/product/application.ini', 'common');
+	$env = 'product';
 }
 
+if ($_REQUEST['_profile']) {
+	//xhprof_enable(XHPROF_FLAGS_CPU + XHPROF_FLAGS_MEMORY);
+	xhprof_enable(XHPROF_FLAGS_NO_BUILTINS | XHPROF_FLAGS_CPU | XHPROF_FLAGS_MEMORY);
+
+	register_shutdown_function(function () {
+		$xhprofData = xhprof_disable();
+
+		include_once "/mnt/xhprof/xhprof_lib/utils/xhprof_lib.php";
+		include_once "/mnt/xhprof/xhprof_lib/utils/xhprof_runs.php";
+
+		$xhprofRuns = new XHProfRuns_Default();
+		$xhprofRuns->save_run($xhprofData, "xhprof");
+	});
+}
+//记录错误日志
+register_shutdown_function(function () {
+	$error = error_get_last();
+	if ($error['type'] != E_NOTICE) {
+		error_log(json_encode($error));
+	}
+});
+
+$application = new Yaf_Application(APPLICATION_PATH . "/conf/{$env}/application.ini", 'common');
+
 $application->bootstrap()->run();
-?>
