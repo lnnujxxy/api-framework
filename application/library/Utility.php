@@ -2,6 +2,8 @@
 /**
  * 通用函数封装
  *
+ * @author lnnujxxy@gmail.com
+ * @version  1.0
  */
 class Utility {
 

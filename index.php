@@ -1,4 +1,11 @@
 <?php
+/**
+ * 入口文件
+ *
+ * @author lnnujxxy@gmail.com
+ * @version  1.0
+ */
+
 const APPLICATION_PATH = __DIR__;
 
 if ($_SERVER['env'] === 'test') {

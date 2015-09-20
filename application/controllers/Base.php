@@ -1,24 +1,20 @@
 <?php
 /**
- * 基类控制器
- * 
- * @package BaseController
- * @author zhouweiwei <lnnujxxy@gmail.com>
- * @version 0.1
+ * 基础控制器
+ *
+ * @author lnnujxxy@gmail.com
+ * @version  1.0
  */
 
-/**
- * 基类控制器
- */
 class BaseController extends Yaf_Controller_Abstract {
 	/**
 	 * 统一格式输出
-	 * 
+	 *
 	 * @param Int $errno 错误ID
 	 * @param String $errmsg 错误描述
 	 * @param Mixed $content 返回数据
-	 * 
-	 * @return Json  
+	 *
+	 * @return Json
 	 */
 	protected function output($errno, $errmsg, $content = null) {
 		$ret = [
@@ -47,10 +43,10 @@ class BaseController extends Yaf_Controller_Abstract {
 	protected function error($errno, $errmsg) {
 		$ret = [
 			'errno' => $errno,
-			'errmsg' => base64_encode($errmsg)
+			'errmsg' => base64_encode($errmsg),
 		];
 
-		$json = json_encode($ret); 
+		$json = json_encode($ret);
 		exit;
 	}
 }

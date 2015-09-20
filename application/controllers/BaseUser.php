@@ -1,13 +1,9 @@
 <?php
 /**
  * 用户控制器
- * 
- * @author zhouweiwei <lnnujxxy@gmail.com>
- * @version 1.0.1
- */
-
-/**
- * 用户控制器
+ *
+ * @author lnnujxxy@gmail.com
+ * @version 1.0
  */
 class BaseUserController extends BaseController {
 
@@ -16,11 +12,7 @@ class BaseUserController extends BaseController {
 	 */
 	public function loginAction() {
 		$userModel = new UserModel();
-		$content  = $userModel->login();
+		$content = $userModel->login();
 		return $this->output(0, 'ok', $content);
-	}
-
-	public function registerAction() {
-
 	}
 }

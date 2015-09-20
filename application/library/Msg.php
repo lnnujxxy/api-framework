@@ -1,6 +1,7 @@
 <?php
 /**
  * 返回提示或文本
+ *
  * @author lnnujxxy@gmail.com
  * @version  1.0
  */

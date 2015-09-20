@@ -1,5 +1,10 @@
 <?php
-
+/**
+ * Mysql处理类
+ *
+ * @author lnnujxxy@gmail.com
+ * @version  1.0
+ */
 class Mysql {
 	private $pdo;
 	private $config;
