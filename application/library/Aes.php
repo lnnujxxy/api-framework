@@ -25,6 +25,6 @@ class Aes {
 	}
 
 	public function decrypt($encrypted) {
-		return mcrypt_decrypt(MCRYPT_RIJNDAEL_128, $this->key, base64_decode($encrypted), MCRYPT_MODE_CBC, $this->iv);
+		return trim(mcrypt_decrypt(MCRYPT_RIJNDAEL_128, $this->key, base64_decode($encrypted), MCRYPT_MODE_CBC, $this->iv));
 	}
 }
