@@ -1,0 +1,430 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"an",
+				"answers"
+			],
+			[
+				"reu",
+				"require"
+			],
+			[
+				"re",
+				"response"
+			],
+			[
+				"req",
+				"request_method"
+			],
+			[
+				"getP",
+				"getParams"
+			],
+			[
+				"base",
+				"base64_decode"
+			],
+			[
+				"p",
+				"params"
+			],
+			[
+				"param",
+				"params"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"coy",
+				"copyright	@copyright"
+			],
+			[
+				"nick",
+				"nickname"
+			],
+			[
+				"enc",
+				"encrypt"
+			],
+			[
+				"time",
+				"timestamp"
+			],
+			[
+				"tim",
+				"timestamp"
+			],
+			[
+				"exec",
+				"execute"
+			],
+			[
+				"pre",
+				"prepare"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.php",
+			"settings":
+			{
+				"buffer_size": 1004,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 87.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"view",
+				"View: Toggle Tabs"
+			],
+			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
+				"package",
+				"Package Control: List Packages"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/workspace/biaobai/server_size/trunk/test.php",
+		"/Users/workspace/biaobai/server_size/trunk/conf/test/test_biaobai_im.conf",
+		"/Users/workspace/web-framework/openresty/test.lua",
+		"/Users/workspace/biaobai/server_size/trunk/openresty/api.lua",
+		"/Users/workspace/biaobai/server_size/trunk/openresty/model/user_redis.lua",
+		"/Users/workspace/biaobai/server_size/trunk/openresty/libs/redis_pool.lua",
+		"/Users/workspace/biaobai/server_size/trunk/openresty/controller/user.lua",
+		"/Users/workspace/biaobai/server_size/trunk/openresty/libs/config.lua",
+		"/Users/workspace/biaobai/server_size/trunk/openresty/libs/utility.lua",
+		"/Users/workspace/biaobai/server_size/trunk/openresty/model/user_redis",
+		"/Users/workspace/biaobai/server_size/trunk/openresty/api/controller/user.lua",
+		"/Users/workspace/biaobai/server_size/trunk/openresty/libs/router.lua",
+		"/Users/workspace/biaobai/server_size/trunk/openresty/api/api.lua",
+		"/Users/workspace/biaobai/server_size/trunk/index.php",
+		"/Users/workspace/biaobai/server_size/trunk/openresty/api/user/test.lua",
+		"/Users/Dll/Library/Application Support/Sublime Text 2/Packages/GoSublime/USAGE.md",
+		"/Users/workspace/biaobai/server_size/trunk/openresty/libs/response.lua",
+		"/Users/workspace/biaobai/server_size/trunk/openresty/libs/request.lua",
+		"/Users/workspace/biaobai/server_size/trunk/conf/test/nginx.conf",
+		"/Users/workspace/biaobai/server_size/trunk/application/controllers/BaseUser.php",
+		"/Users/workspace/biaobai/server_size/trunk/application/controllers/Base.php",
+		"/Users/workspace/biaobai/server_size/trunk/application/library/Constant.php",
+		"/Users/workspace/biaobai/server_size/trunk/application/library/Aes.php",
+		"/Users/workspace/biaobai/server_size/trunk/conf/test/application.ini",
+		"/Users/workspace/biaobai/server_size/trunk/test/library/RsaTest.php",
+		"/Users/workspace/biaobai/server_size/trunk/application/library/Rsa.php",
+		"/Users/workspace/biaobai/server_size/trunk/sftp-config.json",
+		"/Users/workspace/biaobai/server_size/trunk/size_trunk",
+		"/Users/workspace/swoole/tsf/sftp-config.json",
+		"/Users/workspace/web-framework/conf/test/nginx.conf",
+		"/Users/workspace/web-framework/application/library/Utility.php",
+		"/Users/workspace/web-framework/application/library/Aes.php",
+		"/Users/workspace/web-framework/test/library/AesTest.php",
+		"/Users/workspace/web-framework/application/plugins/Sample.php",
+		"/Users/workspace/web-framework/cli.php",
+		"/Users/workspace/web-framework/application/library/IDWork.php",
+		"/Users/workspace/web-framework/test/library/IDWorkTest.php",
+		"/Users/workspace/web-framework/application/library/Memcache.php",
+		"/Users/workspace/web-framework/application/library/Msg.php",
+		"/Users/workspace/web-framework/application/library/Mysql.php",
+		"/Users/workspace/web-framework/application/library/RedisClient.php",
+		"/Users/workspace/web-framework/application/library/Rsa.php",
+		"/Users/workspace/web-framework/application/Bootstrap.php",
+		"/Users/workspace/web-framework/conf/test/application.ini",
+		"/Users/workspace/web-framework/application/controllers/Error.php",
+		"/Users/workspace/web-framework/index.php",
+		"/Users/workspace/web-framework/application/controllers/Index.php",
+		"/Users/workspace/web-framework/application/controllers/Cron.php",
+		"/Users/workspace/web-framework/application/controllers/Queue.php",
+		"/Users/workspace/web-framework/application/controllers/Base.php",
+		"/Users/workspace/web-framework/application/controllers/BaseUser.php",
+		"/Users/workspace/web-framework/openresty/libs/rsa.lua",
+		"/Users/workspace/web-framework/openresty/api/test.lua",
+		"/Users/workspace/web-framework/sftp-config.json",
+		"/Users/workspace/web-framework/README.md",
+		"/Users/workspace/web-framework/application/library/Constant.php",
+		"/Users/Dll/Library/Application Support/Sublime Text 2/Packages/phpDocumentor/phpdocumentor.sublime-settings",
+		"/Users/Dll/Library/Application Support/Sublime Text 2/Packages/User/phpdocumentor.sublime-settings",
+		"/Users/workspace/biaobai/server/trunk/openresty/app/test.lua",
+		"/Users/workspace/biaobai/server/trunk/test/library/PhpdesTest.php",
+		"/Users/workspace/biaobai/server/trunk/application/controllers/BaseUser.php",
+		"/Users/workspace/biaobai/server/trunk/conf/test/nginx.conf",
+		"/Users/workspace/biaobai/server/trunk/openresty/libs/utility.lua",
+		"/Users/workspace/biaobai/server/trunk/application/controllers/Share.php",
+		"/Users/workspace/biaobai/server/trunk/application/library/Phprsa.php",
+		"/Users/workspace/biaobai/server/trunk/conf/test/application.ini",
+		"/Users/workspace/biaobai/server/trunk/trunk",
+		"/Users/workspace/biaobai/server/trunk/openresty/app/utility.lua",
+		"/Users/workspace/biaobai/server/trunk/index.php",
+		"/Users/workspace/biaobai/server/trunk/application/controllers/Queue.php",
+		"/Users/workspace/biaobai/server/trunk/application/models/SmsStorage.php",
+		"/Users/workspace/biaobai/server/trunk/application/controllers/Sms.php",
+		"/Users/workspace/biaobai/server/trunk/application/controllers/Index.php",
+		"/Users/workspace/biaobai/server/trunk/opcache.php",
+		"/Users/workspace/biaobai/server/trunk/conf/stage/application.ini",
+		"/Users/Dll/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/Dll/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/Dll/workspace/biaobai/server/trunk/sftp-config.json",
+		"/Users/Dll/workspace/biaobai/server/trunk/index.php",
+		"/Users/Dll/Library/Application Support/Sublime Text 2/Packages/phpfmt/package-metadata.json"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"‘",
+			"_M",
+			"Exception",
+			"o",
+			"$errmsg",
+			"errno",
+			"web-framework",
+			"http_server",
+			"self::$http",
+			"static public",
+			"conf_file",
+			"swoole_http_server",
+			"stub_status",
+			"mt",
+			"*\n",
+			"btn_open",
+			"pushkey",
+			"tabs",
+			"tab"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"'",
+			"config",
+			"$msg",
+			"code",
+			"server_size",
+			"$this->http",
+			"public"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.php",
+					"settings":
+					{
+						"buffer_size": 1004,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								717,
+								717
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 161.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 35.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.MarGo-output":
+	{
+		"height": 124.0
+	},
+	"output.sftp":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"aes",
+				"application/library/Aes.php"
+			],
+			[
+				"const",
+				"application/library/Constant.php"
+			],
+			[
+				"server",
+				"lib/Swoole/Server.php"
+			],
+			[
+				"base",
+				"application/controllers/Base.php"
+			],
+			[
+				"inde",
+				"index.php"
+			],
+			[
+				"share",
+				"application/controllers/Share.php"
+			],
+			[
+				"share/in",
+				"application/views/share/invite.phtml"
+			],
+			[
+				"test/app",
+				"conf/test/application.ini"
+			],
+			[
+				"phpr",
+				"application/library/Phprsa.php"
+			],
+			[
+				"test/ng",
+				"conf/test/nginx.conf"
+			],
+			[
+				"baseu",
+				"application/controllers/BaseUser.php"
+			],
+			[
+				"phpde",
+				"test/library/PhpdesTest.php"
+			],
+			[
+				"sms",
+				"application/controllers/Sms.php"
+			],
+			[
+				"queu",
+				"application/controllers/Queue.php"
+			],
+			[
+				"stage/app",
+				"conf/stage/application.ini"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 211.0,
+	"status_bar_visible": false
+}

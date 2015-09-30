@@ -1,6 +1,8 @@
 <?php
 
 class Constant {
+	const PROJECT_NAME = 'size';
+
 	const MODULE_NAME_ANDROID = 'An'; //android 模块名
 	const MODULE_NAME_IOS = 'Ios'; //Ios 模块名
 

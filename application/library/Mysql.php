@@ -9,17 +9,18 @@ class Mysql {
 	private $pdo;
 	private $config;
 
-	public static $instance = null;
+	public static $instances = [];
 
 	public function __construct() {
 		$this->configs = Yaf_Registry::get('config')->db->toArray();
 	}
 
-	public function getInstance() {
-		if (!self::$instance) {
-			self::$instance = new self();
+	public static function getInstance($isMaster = false) {
+		if (!self::$instances[$isMaster]) {
+			self::$instances[$isMaster] = (new Mysql())->getMSConfig($isMaster)->getDB();
 		}
-		return self::$instance;
+
+		return self::$instances[$isMaster];
 	}
 
 	/*
@@ -37,19 +38,10 @@ class Mysql {
 		return $this;
 	}
 
-	/*
-	 * Hash方式
+	/**
+	 * 连接数据库返回PDO
+	 * @return PDO
 	 */
-	public function getHashConfig($hashKey = null) {
-		is_null($hashKey) && $hashKey = mt_rand(10000, 99999);
-
-		if (count($this->configs) > 1 && $hashKey) {
-			$count = count($this->configs);
-			$this->config = $this->configs[$hashKey % $count];
-		}
-		return $this;
-	}
-
 	public function getDB() {
 
 		$config = $this->config;

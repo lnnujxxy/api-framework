@@ -9,7 +9,7 @@ class Aes {
 	private $iv; //偏移量
 	public function __construct($key, $iv = 0) {
 		if (!$key || strlen($key) < 16) {
-			die("param key invalid");
+			throw new Exception("aes param key invalid");
 		}
 
 		$this->key = $key;
