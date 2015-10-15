@@ -1,5 +1,6 @@
 local config = require "config"
 local mysql = require "resty.mysql"
+local utility = require "utility"
 
 local mysql_pool = {}
 
@@ -7,7 +8,6 @@ function mysql_pool:getClient()
 	if ngx.ctx[mysql_pool] then
 		return true, ngx.ctx[mysql_pool]
 	end
-
 	local db, err = mysql:new()
 
 	if not db then
@@ -16,16 +16,16 @@ function mysql_pool:getClient()
 
 	db:set_timeout(1000)
 	--解析域名
-	local res = string.match(config.DBHOST, "^(%d+).(%d+).(%d+).(%d+)$")
-	if not res then
-		local address = utility.resolveDomain(config.DBHOST);
-		ngx.log(ngx.ERR, '#### '.. address)
-		if address == nil then
-			return false, "mysql unknown address"
-		else
-			config.DBHOST = address
-		end
-	end
+	-- local res = string.match(config.DBHOST, "^(%d+).(%d+).(%d+).(%d+)$")
+	-- if not res then
+	-- 	local address = utility.resolveDomain(config.DBHOST);
+	-- 	ngx.log(ngx.ERR, '#### '.. address)
+	-- 	if address == nil then
+	-- 		return false, "mysql unknown address"
+	-- 	else
+	-- 		config.DBHOST = address
+	-- 	end
+	-- end
 
 	local ok, err = db:connect({
 		host = config.DBHOST,
@@ -47,12 +47,13 @@ function mysql_pool:getClient()
 	end
 
 	ngx.ctx[mysql_pool] = db
+
 	return true, ngx.ctx[mysql_pool]
 end
 
 function mysql_pool:close() 
 	if ngx.ctx[mysql_pool] then
-		ngx.ctx[mysql_pool]:set_keeplive(10000, 100)
+		ngx.ctx[mysql_pool]:set_keepalive(10000, 100)
 		ngx.ctx[mysql_pool] = nil
 	end
 end
@@ -65,7 +66,7 @@ function mysql_pool:query(sql)
 		return false, "mysql.query_failed: " .. (err or "nil") .. ", errno:" .. (errno or "nil"), sqlstate
 	end
 
-	return res
+	return res, err, errno, sqlstate;
 end
 
 return mysql_pool

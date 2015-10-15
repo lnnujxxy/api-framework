@@ -1,6 +1,8 @@
 local utility = {}
+local cjson_safe = require "cjson.safe"
+local config = require "config"
 
-utility._VERSION = '1.0'
+utility._VERSION = '0.1'
 
 utility.getClientIP = function() 
 	clientIP = ngx.req.get_headers()["X-Real-IP"]	
@@ -76,6 +78,61 @@ utility.resolveDomain = function(domain)
     	ngx_cache:set(domain, ans.address)
     	return ans.address
     end
+end
+
+utility.getParams = function()
+	local args
+	if "GET" == ngx.var.request_method then
+	    args = ngx.req.get_uri_args()
+	elseif "POST" == ngx.var.request_method then
+	    ngx.req.read_body()
+	    args = ngx.req.get_post_args()
+	end
+
+	
+	local params 
+
+	if args.pm and args.ky then
+		local resty_rsa = require "rsa"
+		
+		--ngx.log(ngx.ERR, "RSA_PRIV_KEY: " .. config.RSA_PRIV_KEY)
+		local priv, err = resty_rsa:new({ private_key = config.RSA_PRIV_KEY , password = config.RSA_PASSWORD})
+	    if not priv then
+	        ngx.log(ngx.ERR, "new rsa err: " .. err)
+	        return
+	    end
+	    local key = priv:decrypt(ngx.decode_base64(args.ky))
+
+	    local aes = require "resty.aes"
+    	local str = require "resty.string"
+    	local aes_128_cbc_with_iv = aes:new(key, nil, aes.cipher(128, "cbc"), {iv=key})
+        params = aes_128_cbc_with_iv:decrypt(ngx.decode_base64(args.pm))
+        ngx.header['aes_key'] = key
+        -- ngx.log(ngx.ERR, "$$$ params : " .. params)
+        return cjson_safe.decode(params)
+	elseif args.pm and not args.ky then
+		params = ngx.decode_base64(args.pm);
+		return cjson_safe.decode(params)
+	end
+end
+
+utility.output = function(code, msg, content)
+	local ret = {
+		code = code,
+		msg = ngx.encode_base64(msg),
+		content = content
+	}
+
+	ngx.header.content_type = 'application/json; charset=utf-8';
+	ngx.say(cjson_safe.encode(ret))
+
+	local mysql_pool = require("mysql_pool");
+	mysql_pool:close();
+
+	local redis_pool = require("redis_pool");
+	redis_pool:close();
+
+	ngx.exit(ngx.HTTP_OK)
 end
 
 return utility
