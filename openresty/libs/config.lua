@@ -1,22 +1,22 @@
-local config = {}
+local _M = {}
 
-config._VERSION = '1.0'
+_M._VERSION = '0.1'
 
 -- DB Config
-config.DBHOST = 'biaobaoapp.mysql.rds.aliyuncs.com'
-config.DBPORT = 3989
-config.DBNAME = 'size_test'
-config.DBUSER = 'biaobai'
-config.DBPW = 'biaobai'
-config.DBCHARSET = 'UTF8'
+_M.DBHOST = 'biaobaoapp.mysql.rds.aliyuncs.com'
+_M.DBPORT = 3989
+_M.DBNAME = 'size_test'
+_M.DBUSER = 'biaobai'
+_M.DBPW = 'biaobai'
+_M.DBCHARSET = 'UTF8'
 
 -- Redis Config
---config.REDISHOST = '10.140.94.65'
-config.REDISHOST = '0fe69f3a165a11e5.m.cnbja.kvstore.aliyuncs.com'
-config.REDISPORT = 6379
-config.REDISAUTH = '0fe69f3a165a11e5:biaobai123QWE'
+--_M.REDISHOST = '10.140.94.65'
+_M.REDISHOST = '0fe69f3a165a11e5.m.cnbja.kvstore.aliyuncs.com'
+_M.REDISPORT = 6379
+_M.REDISAUTH = '0fe69f3a165a11e5:biaobai123QWE'
 
-config.RSA_PUBLIC_KEY = [[
+_M.RSA_PUBLIC_KEY = [[
 -----BEGIN PUBLIC KEY-----
 MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCwrQbcGfgbEz0f573qxYgSs+1m
 8aTsmLIvTRcTJ/rO0YfRHCvwEcCjLIvWLFW7AiPlUETu+RAjyuj6SQiUR0i0s7L9
@@ -25,7 +25,7 @@ ZAV9R0c9dSlSWkANhlJFIO34ziGzVqW/+PrNza/kpZ+qJ+XoFEt7/NBXLDw2M6/+
 -----END PUBLIC KEY-----
 ]]
 
-config.RSA_PRIV_KEY = [[
+_M.RSA_PRIV_KEY = [[
 -----BEGIN ENCRYPTED PRIVATE KEY-----
 MIICxjBABgkqhkiG9w0BBQ0wMzAbBgkqhkiG9w0BBQwwDgQI0SjJlO3ehxUCAggA
 MBQGCCqGSIb3DQMHBAjcrlgtnAQNHASCAoBu3acrekwCdqHjIugXp5pKRBq61U6X
@@ -45,6 +45,6 @@ nkj7VfwXPBjd/Zsq/7gbEWYfyAK8WILsfKi30PenOY82MdkRVROGknz4
 -----END ENCRYPTED PRIVATE KEY-----
 ]]
 
-config.RSA_PASSWORD = "bb#$34^&"
+_M.RSA_PASSWORD = "bb#$34^&"
 
-return config
+return _M

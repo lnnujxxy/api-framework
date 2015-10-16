@@ -15,7 +15,7 @@ r:match({
 	  ["/hello"]       = hello,
 	  ["/ios/user/getMbRegVcode/:sv"] = user.getMbRegVcode,
 	  ["/ios/user/mbReg/:sv"] = user.mbReg,
-	  ["/hello/api/:sv"] = user.api
+	  ["/ios/user/api/:sv"] = user.api
 	},
 	POST = {
 	  ["/app/:id/comments"] = function(params)

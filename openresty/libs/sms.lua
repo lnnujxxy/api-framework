@@ -1,8 +1,10 @@
-local sms = {}
+local http = require("resty.http")
+local string = require("string")
 
-sms._VERSION = '1.0'
+local _M = {}
+_M._VERSION = '0.1'
 
-sms.sendSMSByML = function(mobile, content) 
+function _M.sendSMSByML(mobile, content) 
 	local params = {
 		username = 'xdpb',
 		password = 'BiaoBai_dx_140630', 
@@ -15,10 +17,9 @@ sms.sendSMSByML = function(mobile, content)
 	for k, v in pairs(params) do
 		param = k .. "=" .. v .. "&" .. param 
 	end
-	local string = require("string")
+	
 	param = string.sub(param, 0, #param - 1)
-
-	local http = require("resty.http")
+	
 	local hc = http:new()
 	local ok, code, header, status, body = hc:request({
 		url = "http://m.5c.com.cn/api/send/",
@@ -35,4 +36,4 @@ sms.sendSMSByML = function(mobile, content)
 	return false;
 end
 
-return sms
+return _M

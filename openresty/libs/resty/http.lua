@@ -116,7 +116,7 @@ local function receivestatusline(sock)
 
     local data, err, partial = status_reader()
     if not data then
-        return nil, "aa read status line failed " .. err
+        return nil, "read status line failed " .. err
     end
 
     local t1, t2, code = string.find(data, "HTTP/%d*%.%d* (%d%d%d)")

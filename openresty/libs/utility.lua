@@ -1,10 +1,9 @@
-local utility = {}
-local cjson_safe = require "cjson.safe"
-local config = require "config"
+local resolver 		= require "resty.dns.resolver"
 
-utility._VERSION = '0.1'
+local _M = {}
+_M._VERSION = '0.1'
 
-utility.getClientIP = function() 
+function _M.getClientIP() 
 	clientIP = ngx.req.get_headers()["X-Real-IP"]	
 	if clientIP == nil then
 		clientIP = ngx.req.get_headers()["x_forworded_for"]
@@ -17,7 +16,7 @@ utility.getClientIP = function()
 	return clientIP
 end
 
-utility.htmlspecialchars = function(str)
+function _M.htmlspecialchars(str)
 	local rs = str or nil
 
 	if rs and type(rs) == 'string' then
@@ -32,7 +31,7 @@ utility.htmlspecialchars = function(str)
 end
 
 
-utility.sort = function(t, order) 
+function _M.sort(t, order) 
 	local keys = {}
 	for k in pairs(t) do keys[#keys+1] = k end
 
@@ -52,17 +51,15 @@ utility.sort = function(t, order)
 	return sorted
 end
 
-utility.resolveDomain = function(domain)
+function _M.resolveDomain(domain)
+	-- 开启dict缓存
 	local ngx_cache = ngx.shared.ngx_cache
 	local address, flags = ngx_cache:get(domain)
 	if address ~= nil then
-		ngx.log(ngx.ERR, '####'..address)
 		return ngx_cache:get(domain)
 	end
 
-	local resolver = require "resty.dns.resolver"
-
-    local r, err = resolver:new{
+    local r, err = resolver:new {
         nameservers = { "8.8.8.8" }
     }
     if not r then
@@ -80,59 +77,4 @@ utility.resolveDomain = function(domain)
     end
 end
 
-utility.getParams = function()
-	local args
-	if "GET" == ngx.var.request_method then
-	    args = ngx.req.get_uri_args()
-	elseif "POST" == ngx.var.request_method then
-	    ngx.req.read_body()
-	    args = ngx.req.get_post_args()
-	end
-
-	
-	local params 
-
-	if args.pm and args.ky then
-		local resty_rsa = require "rsa"
-		
-		--ngx.log(ngx.ERR, "RSA_PRIV_KEY: " .. config.RSA_PRIV_KEY)
-		local priv, err = resty_rsa:new({ private_key = config.RSA_PRIV_KEY , password = config.RSA_PASSWORD})
-	    if not priv then
-	        ngx.log(ngx.ERR, "new rsa err: " .. err)
-	        return
-	    end
-	    local key = priv:decrypt(ngx.decode_base64(args.ky))
-
-	    local aes = require "resty.aes"
-    	local str = require "resty.string"
-    	local aes_128_cbc_with_iv = aes:new(key, nil, aes.cipher(128, "cbc"), {iv=key})
-        params = aes_128_cbc_with_iv:decrypt(ngx.decode_base64(args.pm))
-        ngx.header['aes_key'] = key
-        -- ngx.log(ngx.ERR, "$$$ params : " .. params)
-        return cjson_safe.decode(params)
-	elseif args.pm and not args.ky then
-		params = ngx.decode_base64(args.pm);
-		return cjson_safe.decode(params)
-	end
-end
-
-utility.output = function(code, msg, content)
-	local ret = {
-		code = code,
-		msg = ngx.encode_base64(msg),
-		content = content
-	}
-
-	ngx.header.content_type = 'application/json; charset=utf-8';
-	ngx.say(cjson_safe.encode(ret))
-
-	local mysql_pool = require("mysql_pool");
-	mysql_pool:close();
-
-	local redis_pool = require("redis_pool");
-	redis_pool:close();
-
-	ngx.exit(ngx.HTTP_OK)
-end
-
-return utility
+return _M
