@@ -1,4 +1,4 @@
-# web-framework
+# api-framework
 该项目基于yaf,openresty，做了二次开发为接口开发使用
 >
 1. 可以将ios/andriod接口基本操作共享，也可以单独开发
