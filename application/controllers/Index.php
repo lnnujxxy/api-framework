@@ -5,6 +5,7 @@
  * @author lnnujxxy@gmail.com
  * @version  1.0
  */
+
 class IndexController extends Yaf_Controller_Abstract {
 
 	public function indexAction($name = "yaf") {

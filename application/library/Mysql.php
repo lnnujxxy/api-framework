@@ -34,7 +34,10 @@ class Mysql {
 				array_shift($this->configs);
 				$this->config = $this->configs[array_rand($this->configs)];
 			}
+		} else {
+			$this->config = $this->configs[0];
 		}
+
 		return $this;
 	}
 
@@ -43,7 +46,6 @@ class Mysql {
 	 * @return PDO
 	 */
 	public function getDB() {
-
 		$config = $this->config;
 		$dsn = 'mysql:host=' . $config['host'] . ';port=' . $config['port'] . ';dbname=' . $config['name'];
 		$user = $config['user'];

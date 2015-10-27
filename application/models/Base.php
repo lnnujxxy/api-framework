@@ -5,14 +5,16 @@
  * @version 1.0
  */
 class BaseModel {
+	public $db;
 	public $table;
 
-	public function __construct() {
-
+	public function __construct($db) {
+		$this->db = $db;
 	}
 
 	public function setTable($table) {
 		$this->table = $table;
+		return $this;
 	}
 
 	public function getTable() {

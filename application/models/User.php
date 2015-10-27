@@ -6,8 +6,9 @@
  */
 class UserModel extends BaseModel {
 
-	public function __construct() {
+	public function __construct($db) {
 		$this->table = 'sz_user';
+		parent::__construct($db);
 	}
 
 	public function login($username, $oriPassword) {
@@ -23,11 +24,10 @@ class UserModel extends BaseModel {
 		return $row;
 	}
 
-	public function getByUsername($username) {
-		$db = Mysql::getInstance(false);
-		$sql = "SELECT `uid`, `username` FROM " . $this->getTable() . " WHERE `username` = ?";
-		$sth = $db->prepare($sql);
-		$sth->execute(array($username));
+	public function getByUsername($nick) {
+		$sql = "SELECT `uid`, `nick` FROM " . $this->getTable() . " WHERE `nick` = ?";
+		$sth = $this->db->prepare($sql);
+		$sth->execute(array($nick));
 		return $sth->fetch(PDO::FETCH_ASSOC);
 	}
 

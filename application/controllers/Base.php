@@ -162,4 +162,5 @@ class BaseController extends Yaf_Controller_Abstract {
 		$aes = new Aes($key);
 		return $aes->decrypt($str);
 	}
+
 }

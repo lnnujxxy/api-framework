@@ -14,8 +14,9 @@ class BaseUserController extends BaseController {
 		$params = $this->getParams();
 		$this->upgradeApi($params);
 
-		$userModel = new UserModel();
-		$content = $userModel->login();
+		$db = Mysql::getInstance(false);
+		$userModel = new UserModel($db);
+		$content = $userModel->login('11', '222');
 		/*$arr = [
 		'aaa' => "😂",
 		'bbbb' => "http://zhidao.baidu.com/link?url=LAgH15AncbJn0jbW-dtze03-kv5Dw59wkRHL_R1wsLut5eNktHunnSwIQJks6Vg9Vy-W3E9sDwkePZ1DeIw7Ia\n",
